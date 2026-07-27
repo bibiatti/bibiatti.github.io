@@ -45,20 +45,36 @@
   body { margin: 0; }
   a { color: #0b6b5b; text-decoration: none; }
   a:hover { color: #073d34; }
+  a:focus-visible, button:focus-visible { outline: 2px solid #0b6b5b; outline-offset: 3px; border-radius: 4px; }
+  h1, h2, h3 { text-wrap: balance; }
+  p { text-wrap: pretty; }
   ::selection { background: #b8efd6; }
   img { display: block; max-width: 100%; }
 
   @keyframes bubbleIn { from { opacity: 0; transform: translateY(14px) scale(.97); } to { opacity: 1; transform: none; } }
-  @keyframes floatY { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
-  @keyframes softglow { 0%,100% { opacity:.5; } 50% { opacity:.85; } }
+  @keyframes floatY { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+  @keyframes softglow { 0%,100% { opacity:.3; } 50% { opacity:.65; } }
 
-  /* hover (substitui o style-hover do editor) */
-  .hv-wa:hover { background: #073d34 !important; }
-  .hv-primary:hover { background: #073d34 !important; transform: translateY(-1px); }
-  .hv-ghost:hover { border-color: #0b6b5b !important; color: #0b6b5b !important; }
-  .hv-card { transition: transform .2s, box-shadow .2s; }
-  .hv-card:hover { transform: translateY(-4px); box-shadow: 0 24px 50px -30px rgba(13,27,22,.35); }
-  .hv-lift:hover { transform: translateY(-2px); }
+  /* hover & active polish */
+  .hv-wa { transition: background 0.25s cubic-bezier(0.16, 1, 0.3, 1), transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease; }
+  .hv-wa:hover { background: #073d34 !important; transform: translateY(-2px); box-shadow: 0 10px 24px -8px rgba(11,107,91,.8) !important; }
+  .hv-wa:active { transform: translateY(0) scale(0.98); }
+
+  .hv-primary { transition: background 0.25s cubic-bezier(0.16, 1, 0.3, 1), transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease; }
+  .hv-primary:hover { background: #073d34 !important; transform: translateY(-2px); box-shadow: 0 16px 36px -12px rgba(11,107,91,.9) !important; }
+  .hv-primary:active { transform: translateY(0) scale(0.98); }
+
+  .hv-ghost { transition: border-color 0.25s ease, color 0.25s ease, transform 0.25s ease, background 0.25s ease; }
+  .hv-ghost:hover { border-color: #0b6b5b !important; color: #0b6b5b !important; background: #f4fbf8 !important; transform: translateY(-2px); }
+  .hv-ghost:active { transform: translateY(0) scale(0.98); }
+
+  .hv-card { transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease; }
+  .hv-card:hover { transform: translateY(-5px); border-color: #0b6b5b !important; box-shadow: 0 20px 40px -20px rgba(11,107,91,.22) !important; }
+
+  .hv-lift { transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease; }
+  .hv-lift:hover { transform: translateY(-3px); box-shadow: 0 20px 40px -12px rgba(37,211,102,.5) !important; }
+  .hv-lift:active { transform: translateY(0) scale(0.98); }
+
   .hv-white:hover { color: #fff !important; }
 
   /* responsivo */
