@@ -1,4 +1,4 @@
-# Design System: Bianca Atti Barona Portfolio
+# Design System: Bianca Atti Portfolio
 
 ## Core Architecture
 - Single Page Application estática (HTML5 + Vanilla CSS + JS minimal).

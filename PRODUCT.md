@@ -14,7 +14,7 @@ Empresários, donos de pequenos e médios negócios e profissionais autônomos d
 
 ## Product Purpose
 
-Apresentar a Bianca Atti Barona como desenvolvedora especialista em soluções digitais e agentes de IA que vendem, servindo como o principal cartão de visitas e canal de conversão via WhatsApp.
+Apresentar a Bianca Atti como desenvolvedora especialista em soluções digitais e agentes de IA que vendem, servindo como o principal cartão de visitas e canal de conversão via WhatsApp.
 
 ## Positioning
 
