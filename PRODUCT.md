@@ -10,7 +10,7 @@ web
 
 ## Users
 
-Empresários, donos de pequenos e médios negócios e profissionais autônomos de Porto Alegre que precisam de presença digital profissional (sites, sistemas simples ou agentes de atendimento via WhatsApp) para atrair mais clientes e automatizar tarefas manuais.
+Empresários, donos de pequenos e médios negócios e profissionais autônomos que precisam de presença digital profissional (sites, sistemas simples ou agentes de atendimento via WhatsApp) para atrair mais clientes e automatizar tarefas manuais.
 
 ## Product Purpose
 
@@ -18,7 +18,7 @@ Apresentar a Bianca Atti como desenvolvedora especialista em soluções digitais
 
 ## Positioning
 
-Desenvolvimento direto, sem termos técnicos e focado em gerar demanda e vendas pro seu negócio em Porto Alegre, com entrega rápida.
+Desenvolvimento direto, sem termos técnicos e focado em gerar demanda e vendas pro seu negócio, com entrega rápida.
 
 ## Conversion & proof
 
