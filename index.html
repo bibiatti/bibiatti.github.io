@@ -255,40 +255,75 @@
       <h2 class="h2-big" style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 40px; line-height: 1.08; letter-spacing: -.02em; margin: 14px 0 0; max-width: 560px; color: #0d1b16;">Alguns exemplos do que eu entrego</h2>
       <p style="font-size: 17px; line-height: 1.6; color: #4c5c56; margin: 18px 0 0; max-width: 620px;">Projetos de demonstração pra você ver o padrão do meu trabalho. Cada um pode virar exatamente a cara do seu negócio.</p>
       <div class="proj-grid" style="display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; margin-top: 48px;">
-        <article class="hv-card" style="background: #fff; border: 1px solid #e6ebe8; border-radius: 20px; overflow: hidden;">
-          <div style="position: relative; aspect-ratio: 16/10; background: linear-gradient(150deg,#0b6b5b,#073d34); overflow: hidden;">
-            <img src="images/barbeariaprint.png" alt="Print do site de barbearia" style="width: 100%; height: 100%; object-fit: cover; display: block;" onerror="this.remove();">
-            <div style="position: absolute; inset: 0; background: rgba(11,107,91,.22);"></div>
-            <div style="position: absolute; left: 16px; bottom: 16px; color: rgba(255,255,255,.9); font-size: 12.5px; font-weight: 600;">Site de barbearia</div>
+        <!-- PROJETO 1: SALÃO DE BELEZA -->
+        <article class="hv-card" style="background: #fff; border: 1px solid #e6ebe8; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column;">
+          <div style="position: relative; aspect-ratio: 16/10; background: linear-gradient(150deg,#0b6b5b,#073d34); overflow: hidden; cursor: pointer;" onclick="openDemoModal('demonstracoes/salao-beleza/index.html', 'Salão Aurora - Estética & Beleza')">
+            <img src="images/salaobelezaprint.png" alt="Print do site Salão Aurora" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            <div style="position: absolute; inset: 0; background: rgba(11,107,91,.15); transition: background .2s;"></div>
+            <div style="position: absolute; left: 14px; bottom: 14px; background: rgba(13,27,22,.85); backdrop-filter: blur(4px); color: #fff; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 6px;">Salão & Estética</div>
           </div>
-          <div style="padding: 22px 22px 24px;">
-            <span style="display: inline-block; font-size: 11.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #0b6b5b; background: #e4f1ec; padding: 4px 10px; border-radius: 999px;">Projeto de demonstração</span>
-            <h3 style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 20px; margin: 14px 0 8px; color: #0d1b16;">Site de barbearia</h3>
-            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #4c5c56;">Página com agendamento e botão de WhatsApp, feita pra encher a agenda.</p>
+          <div style="padding: 22px; display: flex; flex-direction: column; flex: 1; justify-content: space-between;">
+            <div>
+              <span style="display: inline-block; font-size: 11.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #0b6b5b; background: #e4f1ec; padding: 4px 10px; border-radius: 999px;">Projeto de demonstração</span>
+              <h3 style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 20px; margin: 12px 0 8px; color: #0d1b16;">Salão de Beleza & Estética</h3>
+              <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #4c5c56;">Página elegante para estética com vitrine de serviços, apresentação de equipe e agendamento pelo WhatsApp.</p>
+            </div>
+            <div style="display: flex; gap: 10px; margin-top: 20px;">
+              <button onclick="openDemoModal('demonstracoes/salao-beleza/index.html', 'Salão Aurora - Estética & Beleza')" class="hv-primary" style="flex: 1; border: none; cursor: pointer; background: #0b6b5b; color: #fff; font-weight: 700; font-size: 14px; padding: 11px 14px; border-radius: 10px; display: inline-flex; align-items: center; justify-content: center; gap: 6px;">
+                <span>Ver ao vivo 🔍</span>
+              </button>
+              <a href="demonstracoes/salao-beleza/index.html" target="_blank" rel="noopener" class="hv-ghost" style="border: 1px solid #d5ddd9; color: #0d1b16; font-weight: 700; font-size: 14px; padding: 11px 14px; border-radius: 10px; display: inline-flex; align-items: center; justify-content: center; text-decoration: none;">
+                ↗
+              </a>
+            </div>
           </div>
         </article>
-        <article class="hv-card" style="background: #fff; border: 1px solid #e6ebe8; border-radius: 20px; overflow: hidden;">
-          <div style="position: relative; aspect-ratio: 16/10; background: linear-gradient(150deg,#0e7c69,#0b5647); overflow: hidden;">
-            <img src="images/clinicaprint.png" alt="Print do site de clínica" style="width: 100%; height: 100%; object-fit: cover; display: block;" onerror="this.remove();">
-            <div style="position: absolute; inset: 0; background: rgba(14,124,105,.22);"></div>
-            <div style="position: absolute; left: 16px; bottom: 16px; color: rgba(255,255,255,.9); font-size: 12.5px; font-weight: 600;">Site de clínica</div>
+
+        <!-- PROJETO 2: CLÍNICA MÉDICA -->
+        <article class="hv-card" style="background: #fff; border: 1px solid #e6ebe8; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column;">
+          <div style="position: relative; aspect-ratio: 16/10; background: linear-gradient(150deg,#0e7c69,#0b5647); overflow: hidden; cursor: pointer;" onclick="openDemoModal('demonstracoes/clinica-medica/index.html', 'Clínica Vitalis - Saúde & Consultas')">
+            <img src="images/clinicamedicaprint.png" alt="Print do site Clínica Vitalis" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            <div style="position: absolute; inset: 0; background: rgba(14,124,105,.15); transition: background .2s;"></div>
+            <div style="position: absolute; left: 14px; bottom: 14px; background: rgba(13,27,22,.85); backdrop-filter: blur(4px); color: #fff; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 6px;">Clínica Médica</div>
           </div>
-          <div style="padding: 22px 22px 24px;">
-            <span style="display: inline-block; font-size: 11.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #0b6b5b; background: #e4f1ec; padding: 4px 10px; border-radius: 999px;">Projeto de demonstração</span>
-            <h3 style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 20px; margin: 14px 0 8px; color: #0d1b16;">Site de clínica</h3>
-            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #4c5c56;">Institucional com serviços, convênios e captação de contato pra o consultório.</p>
+          <div style="padding: 22px; display: flex; flex-direction: column; flex: 1; justify-content: space-between;">
+            <div>
+              <span style="display: inline-block; font-size: 11.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #0b6b5b; background: #e4f1ec; padding: 4px 10px; border-radius: 999px;">Projeto de demonstração</span>
+              <h3 style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 20px; margin: 12px 0 8px; color: #0d1b16;">Clínica Médica & Saúde</h3>
+              <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #4c5c56;">Institucional para clínicas com especialidades médicas, corpo clínico e captação de pacientes por WhatsApp.</p>
+            </div>
+            <div style="display: flex; gap: 10px; margin-top: 20px;">
+              <button onclick="openDemoModal('demonstracoes/clinica-medica/index.html', 'Clínica Vitalis - Saúde & Consultas')" class="hv-primary" style="flex: 1; border: none; cursor: pointer; background: #0b6b5b; color: #fff; font-weight: 700; font-size: 14px; padding: 11px 14px; border-radius: 10px; display: inline-flex; align-items: center; justify-content: center; gap: 6px;">
+                <span>Ver ao vivo 🔍</span>
+              </button>
+              <a href="demonstracoes/clinica-medica/index.html" target="_blank" rel="noopener" class="hv-ghost" style="border: 1px solid #d5ddd9; color: #0d1b16; font-weight: 700; font-size: 14px; padding: 11px 14px; border-radius: 10px; display: inline-flex; align-items: center; justify-content: center; text-decoration: none;">
+                ↗
+              </a>
+            </div>
           </div>
         </article>
-        <article class="hv-card" style="background: #fff; border: 1px solid #e6ebe8; border-radius: 20px; overflow: hidden;">
-          <div style="position: relative; aspect-ratio: 16/10; background: linear-gradient(150deg,#127c68,#0a3f36); overflow: hidden;">
-            <img src="images/advocaciaprint.png" alt="Print do site de advocacia" style="width: 100%; height: 100%; object-fit: cover; display: block;" onerror="this.remove();">
-            <div style="position: absolute; inset: 0; background: rgba(18,124,104,.22);"></div>
-            <div style="position: absolute; left: 16px; bottom: 16px; color: rgba(255,255,255,.9); font-size: 12.5px; font-weight: 600;">Site de advocacia</div>
+
+        <!-- PROJETO 3: ACADEMIA TITAN -->
+        <article class="hv-card" style="background: #fff; border: 1px solid #e6ebe8; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column;">
+          <div style="position: relative; aspect-ratio: 16/10; background: linear-gradient(150deg,#127c68,#0a3f36); overflow: hidden; cursor: pointer;" onclick="openDemoModal('demonstracoes/academia-titan/index.html', 'Academia Titan - Fitness & Treino')">
+            <img src="images/academiatitanprint.png" alt="Print da Academia Titan" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            <div style="position: absolute; inset: 0; background: rgba(18,124,104,.15); transition: background .2s;"></div>
+            <div style="position: absolute; left: 14px; bottom: 14px; background: rgba(13,27,22,.85); backdrop-filter: blur(4px); color: #fff; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 6px;">Academia & Fitness</div>
           </div>
-          <div style="padding: 22px 22px 24px;">
-            <span style="display: inline-block; font-size: 11.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #0b6b5b; background: #e4f1ec; padding: 4px 10px; border-radius: 999px;">Projeto de demonstração</span>
-            <h3 style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 20px; margin: 14px 0 8px; color: #0d1b16;">Site de advocacia</h3>
-            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #4c5c56;">Página séria e confiável, com áreas de atuação e contato direto pra consultoria.</p>
+          <div style="padding: 22px; display: flex; flex-direction: column; flex: 1; justify-content: space-between;">
+            <div>
+              <span style="display: inline-block; font-size: 11.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #0b6b5b; background: #e4f1ec; padding: 4px 10px; border-radius: 999px;">Projeto de demonstração</span>
+              <h3 style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 20px; margin: 12px 0 8px; color: #0d1b16;">Academia & Centro de Treino</h3>
+              <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #4c5c56;">Landing page com planos, modalidades de treino e chamada para matrículas diretamente no atendimento.</p>
+            </div>
+            <div style="display: flex; gap: 10px; margin-top: 20px;">
+              <button onclick="openDemoModal('demonstracoes/academia-titan/index.html', 'Academia Titan - Fitness & Treino')" class="hv-primary" style="flex: 1; border: none; cursor: pointer; background: #0b6b5b; color: #fff; font-weight: 700; font-size: 14px; padding: 11px 14px; border-radius: 10px; display: inline-flex; align-items: center; justify-content: center; gap: 6px;">
+                <span>Ver ao vivo 🔍</span>
+              </button>
+              <a href="demonstracoes/academia-titan/index.html" target="_blank" rel="noopener" class="hv-ghost" style="border: 1px solid #d5ddd9; color: #0d1b16; font-weight: 700; font-size: 14px; padding: 11px 14px; border-radius: 10px; display: inline-flex; align-items: center; justify-content: center; text-decoration: none;">
+                ↗
+              </a>
+            </div>
           </div>
         </article>
       </div>
@@ -381,5 +416,46 @@
     WhatsApp
   </a>
 </div>
+
+<!-- MODAL DE VISUALIZAÇÃO DE TEMPLATE COMPLETO -->
+<div id="demoModal" onclick="if(event.target===this)closeDemoModal()" style="display: none; position: fixed; inset: 0; z-index: 9999; background: rgba(10, 20, 16, 0.85); backdrop-filter: blur(8px); align-items: center; justify-content: center; padding: 20px;">
+  <div style="width: 100%; max-width: 1320px; height: 92vh; background: #fff; border-radius: 18px; display: flex; flex-direction: column; overflow: hidden; box-shadow: 0 35px 70px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.1);">
+    <!-- Bar Header -->
+    <div style="display: flex; align-items: center; justify-content: space-between; padding: 14px 22px; background: #0d1b16; color: #fff; border-bottom: 1px solid #1c2a24;">
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <span id="demoModalTitle" style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 16.5px; color: #fff;">Visualização de Template</span>
+        <span style="font-size: 11px; font-weight: 700; letter-spacing: 0.05em; background: #0b6b5b; color: #fff; padding: 4px 10px; border-radius: 999px; text-transform: uppercase;">Ao Vivo Interativo</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <a id="demoModalNewTab" href="#" target="_blank" style="color: #5fd0b4; font-size: 13.5px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
+          <span>Abrir em aba cheia</span> ↗
+        </a>
+        <button onclick="closeDemoModal()" aria-label="Fechar" style="background: rgba(255,255,255,0.12); border: none; color: #fff; width: 34px; height: 34px; border-radius: 50%; cursor: pointer; font-weight: bold; font-size: 16px; display: flex; align-items: center; justify-content: center; transition: background .2s;">✕</button>
+      </div>
+    </div>
+    <!-- Frame Container -->
+    <iframe id="demoIframe" src="" title="Template Preview" style="width: 100%; height: 100%; border: none; background: #fff;"></iframe>
+  </div>
+</div>
+
+<script>
+  function openDemoModal(url, title) {
+    document.getElementById('demoIframe').src = url;
+    document.getElementById('demoModalTitle').innerText = title;
+    document.getElementById('demoModalNewTab').href = url;
+    document.getElementById('demoModal').style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeDemoModal() {
+    document.getElementById('demoModal').style.display = 'none';
+    document.getElementById('demoIframe').src = '';
+    document.body.style.overflow = 'auto';
+  }
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeDemoModal();
+  });
+</script>
 </body>
 </html>
