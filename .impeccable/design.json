@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-30T21:35:00Z",
+  "title": "Design System: Bianca Atti Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "primary":          { "role": "primary",   "displayName": "Esmeralda Profundo",  "canonical": "#0b6b5b", "tonalRamp": ["#021a15","#033a2c","#055444","#0b6b5b","#127c68","#1fa882","#5ed4ad","#b8efd6"] },
+      "primary-hover":    { "role": "primary",   "displayName": "Esmeralda Noturna",   "canonical": "#073d34", "tonalRamp": ["#010e0b","#032219","#052e24","#073d34","#0b5244","#107060","#2ca884","#a3e8d0"] },
+      "primary-glow":     { "role": "primary",   "displayName": "Esmeralda Viva",      "canonical": "#127c68", "tonalRamp": ["#031e19","#073d34","#0b5447","#127c68","#1a9e84","#2ec4a3","#7de6ca","#d0f7ef"] },
+      "accent-light":     { "role": "secondary", "displayName": "Verde Menta Suave",   "canonical": "#e4f1ec", "tonalRamp": ["#a8d9c6","#b8e2cf","#caeade","#d9f0e7","#e4f1ec","#ecf7f2","#f4fbf8","#fafffe"] },
+      "accent-mint":      { "role": "secondary", "displayName": "Verde Seleção",       "canonical": "#b8efd6", "tonalRamp": ["#5ec4a0","#7cd4b4","#9ae4c6","#b0ecd3","#b8efd6","#ccf4e2","#dff9ee","#f2fdf8"] },
+      "success-green":    { "role": "secondary", "displayName": "Verde Sucesso",       "canonical": "#16b56a", "tonalRamp": ["#063322","#0b5a40","#108455","#16b56a","#1ed47f","#51e09d","#9eecc4","#d5f8e8"] },
+      "dark-bg":          { "role": "neutral",   "displayName": "Tinta Dark Strip",    "canonical": "#0d1b16", "tonalRamp": ["#040b09","#0d1b16","#14261f","#1e342b","#2a4538","#3d6052","#6a9b87","#c0ddd4"] },
+      "dark-card":        { "role": "neutral",   "displayName": "Dark Card Surface",   "canonical": "#14261f", "tonalRamp": ["#050f0c","#0d1b16","#14261f","#1e3429","#2d4e3d","#3e6655","#73a88e","#c4ddd5"] },
+      "light-bg":         { "role": "neutral",   "displayName": "Branco Puro",         "canonical": "#ffffff", "tonalRamp": ["#c8d5d0","#d6e2de","#e4eeea","#eef5f1","#f4f7f5","#f9fbfa","#fcfdfd","#ffffff"] },
+      "light-surface":    { "role": "neutral",   "displayName": "Superfície Alternada","canonical": "#f4f7f5", "tonalRamp": ["#bccec8","#cddbd5","#dde8e3","#ecf1ef","#f4f7f5","#f8faf9","#fafcfb","#fdfdfd"] },
+      "text-ink":         { "role": "neutral",   "displayName": "Tinta Principal",     "canonical": "#10201b", "tonalRamp": ["#10201b","#1c3028","#2a4438","#3d5a4a","#527a68","#7aa490","#b0ccbf","#deeee8"] },
+      "text-heading":     { "role": "neutral",   "displayName": "Tinta Título",        "canonical": "#0d1b16", "tonalRamp": ["#0d1b16","#182f26","#263e34","#365248","#4d6e60","#719182","#a8c6bb","#d8ece6"] },
+      "text-body":        { "role": "neutral",   "displayName": "Cinza Verde Corpo",   "canonical": "#45554f", "tonalRamp": ["#1a2622","#283832","#35493f","#45554f","#5a7068","#7a9288","#aec5be","#ddeae6"] },
+      "text-muted":       { "role": "neutral",   "displayName": "Cinza Verde Suave",   "canonical": "#4c5c56", "tonalRamp": ["#1c2623","#2a3832","#384940","#4c5c56","#637873","#849e98","#b6ccc7","#dbeae7"] },
+      "text-dark-muted":  { "role": "neutral",   "displayName": "Muted Dark",          "canonical": "#a9bab3", "tonalRamp": ["#3d5048","#50685f","#6a8a80","#8aa89f","#a9bab3","#c4d1cc","#dce4e1","#f0f4f3"] }
+    },
+    "typographyMeta": {
+      "display":  { "displayName": "Display Hero",   "purpose": "Headline principal do hero. Uma instância por página." },
+      "headline": { "displayName": "Headline Seção", "purpose": "Títulos de seção (Serviços, Projetos, Como Funciona, Quem Sou)." },
+      "title":    { "displayName": "Title Card",     "purpose": "Títulos de card de serviço e projeto. Sempre Bricolage Grotesque." },
+      "body":     { "displayName": "Body",           "purpose": "Parágrafos de descrição e conteúdo principal." },
+      "label":    { "displayName": "Label / Badge",  "purpose": "Chips, badges e microcopy de status. Sempre uppercase." }
+    },
+    "shadows": [
+      { "name": "hero-float",       "value": "0 40px 80px -30px rgba(7,61,52,.55)",     "purpose": "Sombra do mockup de WhatsApp no hero. Uso único." },
+      { "name": "card-hover",       "value": "0 20px 40px -20px rgba(11,107,91,.22)",   "purpose": "Glow de card ao hover. Classe .hv-card." },
+      { "name": "button-primary",   "value": "0 16px 36px -12px rgba(11,107,91,.9)",    "purpose": "Glow do botão primário ao hover. Classe .hv-primary." },
+      { "name": "button-wa",        "value": "0 10px 24px -8px rgba(11,107,91,.8)",     "purpose": "Glow do botão WA pill ao hover. Classe .hv-wa." },
+      { "name": "about-photo",      "value": "0 20px 40px -20px rgba(11,107,91,.4)",   "purpose": "Sombra estática sob a foto de perfil da Bianca." },
+      { "name": "featured-card",    "value": "0 30px 60px -30px rgba(11,107,91,.9)",   "purpose": "Sombra do card destaque 'Depois, comigo'." },
+      { "name": "wa-header-cta",    "value": "0 6px 18px -8px rgba(11,107,91,.7)",     "purpose": "Sombra do CTA pill do header." }
+    ],
+    "motion": [
+      { "name": "ease-expressive", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Easing padrão para hovers de botão e card. Saída exponencial." },
+      { "name": "ease-standard",   "value": "ease",                          "purpose": "Transições simples de cor e borda." },
+      { "name": "duration-micro",  "value": "0.25s",                         "purpose": "Duração de micro-interações (hover de botão, borda)." },
+      { "name": "duration-card",   "value": "0.3s",                          "purpose": "Duração de hover de card com lift." },
+      { "name": "anim-float",      "value": "floatY 6s ease-in-out infinite","purpose": "Float do mockup de WhatsApp no hero. Singleton." },
+      { "name": "anim-bubble-in",  "value": "bubbleIn 0.5s ease both",       "purpose": "Entrada das bolhas do chat no hero." },
+      { "name": "anim-glow",       "value": "softglow 5s ease-in-out infinite","purpose": "Glow de fundo radial no hero." }
+    ],
+    "breakpoints": [
+      { "name": "mobile-sm", "value": "480px",  "purpose": "Font-size reduction para h1, h2, cta." },
+      { "name": "mobile",    "value": "640px",  "purpose": "Header compacto; links de navegação ocultos." },
+      { "name": "tablet",    "value": "900px",  "purpose": "Todos os grids colapsam para 1 coluna; paddings reduzidos." }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botão Primário",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "CTA principal. WhatsApp ou ação primária da seção.",
+      "html": "<button class=\"ds-btn-primary\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"#fff\" style=\"flex-shrink:0\"><path d=\"M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.85 9.85 0 001.599 5.283l-1 3.652 3.891-1.634z\"/></svg> Falar comigo agora</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; gap: 10px; background: #0b6b5b; color: #fff; font-family: 'Manrope', system-ui, sans-serif; font-weight: 700; font-size: 16px; padding: 16px 26px; border-radius: 12px; border: none; cursor: pointer; box-shadow: 0 14px 30px -12px rgba(11,107,91,.8); transition: background 0.25s cubic-bezier(0.16,1,0.3,1), transform 0.25s cubic-bezier(0.16,1,0.3,1), box-shadow 0.25s ease; text-decoration: none; } .ds-btn-primary:hover { background: #073d34; transform: translateY(-2px); box-shadow: 0 16px 36px -12px rgba(11,107,91,.9); } .ds-btn-primary:active { transform: translateY(0) scale(0.98); } .ds-btn-primary:focus-visible { outline: 2px solid #0b6b5b; outline-offset: 3px; border-radius: 14px; }"
+    },
+    {
+      "name": "Botão Ghost",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "CTA secundário. Ação alternativa ao lado do botão primário.",
+      "html": "<button class=\"ds-btn-ghost\">Ver projetos</button>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; gap: 8px; background: #fff; color: #0d1b16; font-family: 'Manrope', system-ui, sans-serif; font-weight: 700; font-size: 16px; padding: 16px 24px; border-radius: 12px; border: 1.5px solid #d5ddd9; cursor: pointer; transition: border-color 0.25s ease, color 0.25s ease, transform 0.25s ease, background 0.25s ease; text-decoration: none; } .ds-btn-ghost:hover { border-color: #0b6b5b; color: #0b6b5b; background: #f4fbf8; transform: translateY(-2px); } .ds-btn-ghost:active { transform: translateY(0) scale(0.98); } .ds-btn-ghost:focus-visible { outline: 2px solid #0b6b5b; outline-offset: 3px; border-radius: 14px; }"
+    },
+    {
+      "name": "WhatsApp Pill (Header)",
+      "kind": "button",
+      "refersTo": "button-wa-pill",
+      "description": "CTA do header. Sempre visível por estar no sticky nav.",
+      "html": "<a class=\"ds-btn-wa-pill\" href=\"#\"><svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"#fff\"><path d=\"M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24z\"/></svg> Chamar no WhatsApp</a>",
+      "css": ".ds-btn-wa-pill { display: inline-flex; align-items: center; gap: 9px; background: #0b6b5b; color: #fff; font-family: 'Manrope', system-ui, sans-serif; font-weight: 700; font-size: 15px; padding: 11px 20px; border-radius: 999px; box-shadow: 0 6px 18px -8px rgba(11,107,91,.7); transition: background 0.25s cubic-bezier(0.16,1,0.3,1), transform 0.25s cubic-bezier(0.16,1,0.3,1), box-shadow 0.25s ease; text-decoration: none; } .ds-btn-wa-pill:hover { background: #073d34; transform: translateY(-2px); box-shadow: 0 10px 24px -8px rgba(11,107,91,.8); } .ds-btn-wa-pill:active { transform: translateY(0) scale(0.98); }"
+    },
+    {
+      "name": "Card de Projeto",
+      "kind": "card",
+      "refersTo": "card-project",
+      "description": "Card de demonstração de projeto com thumbnail, badge, título e dois botões.",
+      "html": "<article class=\"ds-card-project\"><div class=\"ds-card-thumb\"><span class=\"ds-card-sector\">Salão &amp; Estética</span></div><div class=\"ds-card-body\"><span class=\"ds-chip-label\">Projeto de demonstração</span><h3 class=\"ds-card-title\">Salão de Beleza &amp; Estética</h3><p class=\"ds-card-desc\">Página elegante para estética com vitrine de serviços e agendamento pelo WhatsApp.</p><div class=\"ds-card-actions\"><button class=\"ds-card-btn-primary\">Ver ao vivo 🔍</button><button class=\"ds-card-btn-icon\">↗</button></div></div></article>",
+      "css": ".ds-card-project { background: #fff; border: 1px solid #e6ebe8; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; transition: transform 0.3s cubic-bezier(0.16,1,0.3,1), box-shadow 0.3s cubic-bezier(0.16,1,0.3,1), border-color 0.3s ease; } .ds-card-project:hover { transform: translateY(-5px); border-color: #0b6b5b; box-shadow: 0 20px 40px -20px rgba(11,107,91,.22); } .ds-card-thumb { position: relative; aspect-ratio: 16/10; background: linear-gradient(150deg, #0b6b5b, #073d34); overflow: hidden; } .ds-card-sector { position: absolute; left: 14px; bottom: 14px; background: rgba(13,27,22,.85); backdrop-filter: blur(4px); color: #fff; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 6px; font-family: 'Manrope', system-ui, sans-serif; } .ds-card-body { padding: 22px; display: flex; flex-direction: column; flex: 1; justify-content: space-between; gap: 12px; } .ds-chip-label { display: inline-block; font-size: 11.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #0b6b5b; background: #e4f1ec; padding: 4px 10px; border-radius: 999px; font-family: 'Manrope', system-ui, sans-serif; } .ds-card-title { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 20px; margin: 8px 0; color: #0d1b16; } .ds-card-desc { margin: 0; font-size: 15px; line-height: 1.55; color: #4c5c56; font-family: 'Manrope', system-ui, sans-serif; } .ds-card-actions { display: flex; gap: 10px; margin-top: 8px; } .ds-card-btn-primary { flex: 1; border: none; cursor: pointer; background: #0b6b5b; color: #fff; font-weight: 700; font-size: 14px; padding: 11px 14px; border-radius: 10px; font-family: 'Manrope', system-ui, sans-serif; transition: background 0.25s ease; } .ds-card-btn-primary:hover { background: #073d34; } .ds-card-btn-icon { border: 1px solid #d5ddd9; color: #0d1b16; font-weight: 700; font-size: 14px; padding: 11px 14px; border-radius: 10px; background: #fff; cursor: pointer; transition: border-color 0.25s ease, color 0.25s ease; } .ds-card-btn-icon:hover { border-color: #0b6b5b; color: #0b6b5b; }"
+    },
+    {
+      "name": "Chip / Badge Label",
+      "kind": "chip",
+      "refersTo": "chip-label",
+      "description": "Badge de categoria ou status. Uppercase, pill, esmeralda sobre menta.",
+      "html": "<span class=\"ds-chip\">Projeto de demonstração</span>",
+      "css": ".ds-chip { display: inline-block; font-family: 'Manrope', system-ui, sans-serif; font-size: 11.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #0b6b5b; background: #e4f1ec; padding: 4px 10px; border-radius: 999px; }"
+    },
+    {
+      "name": "Header / Nav",
+      "kind": "nav",
+      "refersTo": null,
+      "description": "Header sticky com glassmorphism. Logo + links + CTA pill.",
+      "html": "<header class=\"ds-header\"><div class=\"ds-header-inner\"><a class=\"ds-header-logo\" href=\"#\">Bianca Atti</a><nav class=\"ds-header-nav\"><a href=\"#\" class=\"ds-header-link\">Serviços</a><a href=\"#\" class=\"ds-header-link\">Projetos</a><a href=\"#\" class=\"ds-btn-wa-pill\">Chamar no WhatsApp</a></nav></div></header>",
+      "css": ".ds-header { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.86); backdrop-filter: blur(10px); border-bottom: 1px solid #eceeed; } .ds-header-inner { max-width: 1180px; margin: 0 auto; padding: 16px 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; } .ds-header-logo { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 20px; letter-spacing: -.02em; color: #10201b; text-decoration: none; } .ds-header-nav { display: flex; align-items: center; gap: 26px; } .ds-header-link { font-family: 'Manrope', system-ui, sans-serif; font-weight: 600; font-size: 15px; color: #43524d; text-decoration: none; transition: color 0.2s ease; } .ds-header-link:hover { color: #0b6b5b; } .ds-btn-wa-pill { display: inline-flex; align-items: center; gap: 9px; background: #0b6b5b; color: #fff; font-family: 'Manrope', system-ui, sans-serif; font-weight: 700; font-size: 15px; padding: 11px 20px; border-radius: 999px; box-shadow: 0 6px 18px -8px rgba(11,107,91,.7); transition: background 0.25s ease, transform 0.25s ease; text-decoration: none; } .ds-btn-wa-pill:hover { background: #073d34; transform: translateY(-2px); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "A Consultora de Confiança",
+    "overview": "O sistema é construído sobre uma tensão deliberada: é ao mesmo tempo caloroso e preciso. O verde esmeralda profundo (#0b6b5b) funciona como a cor de uma pessoa confiável — não de uma startup de tecnologia. A tipografia combina a força expressiva do Bricolage Grotesque nos títulos com a clareza humanista do Manrope no corpo, criando uma página que se sente escrita por uma pessoa real, não por um template.\n\nA densidade é média: espaço generoso entre seções (88px), mas grupos internos coesos. A página não respira ansiosa nem é austera — é organizada como uma boa conversa. O WhatsApp é o ponto de chegada de cada seção, posicionado sem ser agressivo.\n\nO dark mode existe apenas na seção 'Antes × Depois' (#0d1b16), como um contraste dramático e intencional que separa o problema da solução. Não é um modo alternativo — é um dispositivo narrativo.",
+    "keyCharacteristics": [
+      "Verde esmeralda como cor de confiança, não de tecnologia",
+      "Tipografia em dois registros: display expressivo + corpo legível",
+      "Fundo claro dominante com dark strip narrativo pontual",
+      "WhatsApp como CTA universal, sempre acessível",
+      "Micro-animações de floating e bubbleIn apenas no hero — não espalhadas"
+    ],
+    "rules": [
+      { "name": "The Esmeralda Única Rule",  "body": "O esmeralda aparece em botões, ícones de check e destaques de texto — mas nunca como fundo de superfície grande nem como cor decorativa sem propósito funcional.", "section": "colors" },
+      { "name": "The Balance Rule",          "body": "Todos os h1, h2, h3 usam text-wrap: balance. Nenhum heading termina com uma palavra sozinha na linha.", "section": "typography" },
+      { "name": "The Section Rhythm Rule",   "body": "Nenhuma seção começa sem 88px de respiro vertical (64px mobile). O espaço acima de um heading é sempre maior que o abaixo.", "section": "layout" },
+      { "name": "The Emerald Shadow Rule",   "body": "Nenhuma sombra usa rgba(0,0,0,...) exceto no mockup de WhatsApp. Todas as demais sombras são derivadas do esmeralda.", "section": "elevation" },
+      { "name": "The Soft Edge Rule",        "body": "Nenhum elemento interativo tem border-radius: 0. O sistema não tem arestas vivas.", "section": "shapes" }
+    ],
+    "dos": [
+      "Do usar #0b6b5b como cor de ação e confiança — em botões, checks e ícones funcionais.",
+      "Do manter text-wrap: balance em todos os headings e text-wrap: pretty em parágrafos.",
+      "Do usar sombras derivadas do esmeralda (rgba(11,107,91,...)) para todos os glows e halos.",
+      "Do adicionar translateY(-2px) + shadow no hover de botões e translateY(-5px) em cards.",
+      "Do respeitar prefers-reduced-motion: desativar todas as animações e transições quando solicitado.",
+      "Do manter o CTA de WhatsApp acessível em toda seção."
+    ],
+    "donts": [
+      "Don't usar gradiente de texto. Ênfase vem de peso (800) ou cor sólida do primary.",
+      "Don't usar sombras rgba(0,0,0,...) em elementos de UI.",
+      "Don't animar a imagem da foto da Bianca diretamente — apenas o container pode receber feedback.",
+      "Don't usar o dark background (#0d1b16) fora da seção Antes/Depois e do footer.",
+      "Don't criar seções com border-left colorido em cards ou listas.",
+      "Don't adicionar números de seção (01/02/03) — a hierarquia visual já organiza a sequência."
+    ]
+  }
+}
