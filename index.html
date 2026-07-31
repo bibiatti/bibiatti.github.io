@@ -38,6 +38,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="images/webp/foto-bianca.webp" type="image/webp">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b6b5b'/%3E%3Ctext x='16' y='23' font-family='sans-serif' font-size='20' font-weight='800' fill='%23ffffff' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
 <style>
   * { box-sizing: border-box; }
@@ -262,7 +263,10 @@
         <!-- PROJETO 1: SALÃO DE BELEZA -->
         <article class="hv-card" style="background: #fff; border: 1px solid #e6ebe8; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column;">
           <div style="position: relative; aspect-ratio: 16/10; background: linear-gradient(150deg,#0b6b5b,#073d34); overflow: hidden; cursor: pointer;" onclick="openDemoModal('demonstracoes/salao-beleza/index.html', 'Salão Aurora - Estética & Beleza')">
-            <img src="images/salaobelezaprint.png" alt="Print do site Salão Aurora" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            <picture style="width:100%;height:100%;display:block;">
+              <source srcset="images/webp/salaobelezaprint.webp" type="image/webp">
+              <img src="images/salaobelezaprint.png" alt="Print do site Salão Aurora" loading="lazy" decoding="async" width="1200" height="750" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            </picture>
             <div style="position: absolute; inset: 0; background: rgba(11,107,91,.15); transition: background .2s;"></div>
             <div style="position: absolute; left: 14px; bottom: 14px; background: rgba(13,27,22,.85); backdrop-filter: blur(4px); color: #fff; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 6px;">Salão & Estética</div>
           </div>
@@ -286,7 +290,10 @@
         <!-- PROJETO 2: CLÍNICA MÉDICA -->
         <article class="hv-card" style="background: #fff; border: 1px solid #e6ebe8; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column;">
           <div style="position: relative; aspect-ratio: 16/10; background: linear-gradient(150deg,#0e7c69,#0b5647); overflow: hidden; cursor: pointer;" onclick="openDemoModal('demonstracoes/clinica-medica/index.html', 'Clínica Vitalis - Saúde & Consultas')">
-            <img src="images/clinicamedicaprint.png" alt="Print do site Clínica Vitalis" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            <picture style="width:100%;height:100%;display:block;">
+              <source srcset="images/webp/clinicamedicaprint.webp" type="image/webp">
+              <img src="images/clinicamedicaprint.png" alt="Print do site Clínica Vitalis" loading="lazy" decoding="async" width="1200" height="750" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            </picture>
             <div style="position: absolute; inset: 0; background: rgba(14,124,105,.15); transition: background .2s;"></div>
             <div style="position: absolute; left: 14px; bottom: 14px; background: rgba(13,27,22,.85); backdrop-filter: blur(4px); color: #fff; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 6px;">Clínica Médica</div>
           </div>
@@ -310,7 +317,10 @@
         <!-- PROJETO 3: ACADEMIA TITAN -->
         <article class="hv-card" style="background: #fff; border: 1px solid #e6ebe8; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column;">
           <div style="position: relative; aspect-ratio: 16/10; background: linear-gradient(150deg,#127c68,#0a3f36); overflow: hidden; cursor: pointer;" onclick="openDemoModal('demonstracoes/academia-titan/index.html', 'Academia Titan - Fitness & Treino')">
-            <img src="images/academiatitanprint.png" alt="Print da Academia Titan" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            <picture style="width:100%;height:100%;display:block;">
+              <source srcset="images/webp/academiatitanprint.webp" type="image/webp">
+              <img src="images/academiatitanprint.png" alt="Print da Academia Titan" loading="lazy" decoding="async" width="1200" height="750" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            </picture>
             <div style="position: absolute; inset: 0; background: rgba(18,124,104,.15); transition: background .2s;"></div>
             <div style="position: absolute; left: 14px; bottom: 14px; background: rgba(13,27,22,.85); backdrop-filter: blur(4px); color: #fff; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 6px;">Academia & Fitness</div>
           </div>
@@ -363,7 +373,10 @@
     <div class="about-grid sec-pad" style="max-width: 1180px; margin: 0 auto; padding: 88px 28px; display: grid; grid-template-columns: .8fr 1.2fr; gap: 56px; align-items: start;">
       <div>
         <div class="about-photo" style="width: 100%; aspect-ratio: 1/1; border-radius: 20px; overflow: hidden; background: linear-gradient(150deg,#0b6b5b,#073d34); box-shadow: 0 20px 40px -20px rgba(11,107,91,.4);">
-          <img src="images/foto-bianca.jpg" alt="Foto de Bianca Atti" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+          <picture style="width:100%;height:100%;display:block;">
+            <source srcset="images/webp/foto-bianca.webp" type="image/webp">
+            <img src="images/foto-bianca.jpg" alt="Foto de Bianca Atti" fetchpriority="high" decoding="async" width="800" height="800" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+          </picture>
         </div>
       </div>
       <div>
