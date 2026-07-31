@@ -21,7 +21,7 @@
       name="description"
       content="Crio sites, sistemas e agentes de IA para empresas que querem atrair mais clientes, automatizar atendimentos e construir autoridade online."
     />
-    <meta name="theme-color" content="#0b6b5b" />
+    <meta name="theme-color" content="var(--emerald-600)" />
     <!-- Open Graph / WhatsApp / Social Media Preview -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://bibiatti.github.io/" />
@@ -73,6 +73,18 @@
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b6b5b'/%3E%3Ctext x='16' y='23' font-family='sans-serif' font-size='20' font-weight='800' fill='%23ffffff' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E"
     />
     <style>
+
+      :root {
+        --emerald-600: #0b6b5b;
+        --emerald-900: #073d34;
+        --surface-dark: #0d1b16;
+        --text-muted: #4c5c56;
+        --text-light-muted: #cdd8d2;
+        --border-light: #e6ebe8;
+        --bg-footer: #0b141a;
+        --bg-subtle: #f4f7f5;
+      }
+
       * {
         box-sizing: border-box;
       }
@@ -83,15 +95,15 @@
         margin: 0;
       }
       a {
-        color: #0b6b5b;
+        color: var(--emerald-600);
         text-decoration: none;
       }
       a:hover {
-        color: #073d34;
+        color: var(--emerald-900);
       }
       a:focus-visible,
       button:focus-visible {
-        outline: 2px solid #0b6b5b;
+        outline: 2px solid var(--emerald-600);
         outline-offset: 3px;
         border-radius: 4px;
       }
@@ -148,7 +160,7 @@
           box-shadow 0.25s ease;
       }
       .hv-wa:hover {
-        background: #073d34 !important;
+        background: var(--emerald-900) !important;
         transform: translateY(-2px);
         box-shadow: 0 10px 24px -8px rgba(11, 107, 91, 0.8) !important;
       }
@@ -163,7 +175,7 @@
           box-shadow 0.25s ease;
       }
       .hv-primary:hover {
-        background: #073d34 !important;
+        background: var(--emerald-900) !important;
         transform: translateY(-2px);
         box-shadow: 0 16px 36px -12px rgba(11, 107, 91, 0.9) !important;
       }
@@ -179,8 +191,8 @@
           background 0.25s ease;
       }
       .hv-ghost:hover {
-        border-color: #0b6b5b !important;
-        color: #0b6b5b !important;
+        border-color: var(--emerald-600) !important;
+        color: var(--emerald-600) !important;
         background: #f4fbf8 !important;
         transform: translateY(-2px);
       }
@@ -196,7 +208,7 @@
       }
       .hv-card:hover {
         transform: translateY(-5px);
-        border-color: #0b6b5b !important;
+        border-color: var(--emerald-600) !important;
         box-shadow: 0 20px 40px -20px rgba(11, 107, 91, 0.22) !important;
       }
 
@@ -318,7 +330,7 @@
         top: 0; left: 0;
         width: 10px; height: 10px;
         border-radius: 50%;
-        background: #0b6b5b;
+        background: var(--emerald-600);
         pointer-events: none;
         z-index: 99999;
         transform: translate(-50%, -50%) scale(1);
@@ -337,7 +349,7 @@
         transition: transform 0.35s cubic-bezier(0.16,1,0.3,1), opacity 0.3s;
         opacity: 0.7;
       }
-      .cursor-grow #cursor-dot  { transform: translate(-50%,-50%) scale(2.4); background: #073d34; }
+      .cursor-grow #cursor-dot  { transform: translate(-50%,-50%) scale(2.4); background: var(--emerald-900); }
       .cursor-grow #cursor-ring { transform: translate(-50%,-50%) scale(1.6); opacity: 0.25; }
       @media (hover: none) { #cursor-dot, #cursor-ring { display: none; } body { cursor: auto; } }
 
@@ -403,10 +415,25 @@
       }
       .wa-float-greet .wa-float-label { max-width: 140px; opacity: 1; transition-delay: 0.2s; }
 
-
+      .skip-link {
+        position: absolute;
+        top: -100px;
+        left: 0;
+        background: var(--emerald-600);
+        color: #fff;
+        padding: 12px 20px;
+        z-index: 9999;
+        transition: top 0.2s;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .skip-link:focus {
+        top: 0;
+      }
     </style>
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
     <div
       id="top"
       style="
@@ -471,7 +498,7 @@
                 display: inline-flex;
                 align-items: center;
                 gap: 9px;
-                background: #0b6b5b;
+                background: var(--emerald-600);
                 color: #fff;
                 font-weight: 700;
                 font-size: 15px;
@@ -495,11 +522,12 @@
         </div>
       </header>
 
+      <main id="main-content">
       <!-- HERO -->
       <section
         style="
           position: relative;
-          background: linear-gradient(180deg, #ffffff 0%, #f4f7f5 100%);
+          background: linear-gradient(180deg, #ffffff 0%, var(--bg-subtle) 100%);
         "
       >
         <div
@@ -522,7 +550,7 @@
                 align-items: center;
                 gap: 8px;
                 background: #e4f1ec;
-                color: #0b6b5b;
+                color: var(--emerald-600);
                 font-weight: 700;
                 font-size: 13px;
                 padding: 8px 14px;
@@ -549,10 +577,10 @@
                 line-height: 1.03;
                 letter-spacing: -0.03em;
                 margin: 22px 0 0;
-                color: #0d1b16;
+                color: var(--surface-dark);
               "
             >
-              Seu negócio cresce quando o digital<span style="color: #0b6b5b">
+              Seu negócio cresce quando o digital<span style="color: var(--emerald-600)">
                 trabalha por você.</span
               >
             </h1>
@@ -566,7 +594,7 @@
               "
             >
               Crio sites, sistemas e agentes de IA para
-              <strong style="color: #0d1b16">empresas e negócios</strong> que
+              <strong style="color: var(--surface-dark)">empresas e negócios</strong> que
               querem atrair mais clientes e construir autoridade online.
             </p>
             <div
@@ -586,7 +614,7 @@
                   display: inline-flex;
                   align-items: center;
                   gap: 10px;
-                  background: #0b6b5b;
+                  background: var(--emerald-600);
                   color: #fff;
                   font-weight: 700;
                   font-size: 16px;
@@ -610,7 +638,7 @@
                   align-items: center;
                   gap: 8px;
                   background: #fff;
-                  color: #0d1b16;
+                  color: var(--surface-dark);
                   font-weight: 700;
                   font-size: 16px;
                   padding: 16px 24px;
@@ -638,7 +666,7 @@
                   color: #3a4842;
                 "
               >
-                <span style="color: #0b6b5b">✓</span> Entrega em dias, não meses
+                <span style="color: var(--emerald-600)">✓</span> Entrega em dias, não meses
               </div>
               <div
                 style="
@@ -650,7 +678,7 @@
                   color: #3a4842;
                 "
               >
-                <span style="color: #0b6b5b">✓</span> Você fala direto comigo
+                <span style="color: var(--emerald-600)">✓</span> Você fala direto comigo
               </div>
               <div
                 style="
@@ -662,7 +690,7 @@
                   color: #3a4842;
                 "
               >
-                <span style="color: #0b6b5b">✓</span> Feito pro seu negócio
+                <span style="color: var(--emerald-600)">✓</span> Feito pro seu negócio
               </div>
             </div>
           </div>
@@ -688,7 +716,7 @@
               style="
                 position: relative;
                 width: min(340px, 86vw);
-                background: #0b141a;
+                background: var(--bg-footer);
                 border-radius: 40px;
                 padding: 12px;
                 box-shadow:
@@ -718,7 +746,7 @@
                       width: 40px;
                       height: 40px;
                       border-radius: 50%;
-                      background: #0b6b5b;
+                      background: var(--emerald-600);
                       display: flex;
                       align-items: center;
                       justify-content: center;
@@ -785,7 +813,7 @@
                       align-self: flex-start;
                       max-width: 82%;
                       background: #fff;
-                      color: #0d1b16;
+                      color: var(--surface-dark);
                       font-size: 14px;
                       line-height: 1.4;
                       padding: 9px 12px;
@@ -812,7 +840,7 @@
                       align-self: flex-end;
                       max-width: 84%;
                       background: #d9fdd3;
-                      color: #0d1b16;
+                      color: var(--surface-dark);
                       font-size: 14px;
                       line-height: 1.4;
                       padding: 9px 12px;
@@ -840,7 +868,7 @@
                       align-self: flex-start;
                       max-width: 82%;
                       background: #fff;
-                      color: #0d1b16;
+                      color: var(--surface-dark);
                       font-size: 14px;
                       line-height: 1.4;
                       padding: 9px 12px;
@@ -867,7 +895,7 @@
                       align-self: flex-end;
                       max-width: 84%;
                       background: #d9fdd3;
-                      color: #0d1b16;
+                      color: var(--surface-dark);
                       font-size: 14px;
                       line-height: 1.4;
                       padding: 9px 12px;
@@ -893,7 +921,7 @@
                     style="
                       align-self: center;
                       margin-top: 4px;
-                      background: #0b6b5b;
+                      background: var(--emerald-600);
                       color: #fff;
                       font-size: 12px;
                       font-weight: 700;
@@ -921,7 +949,7 @@
                       background: #fff;
                       border-radius: 999px;
                       padding: 10px 14px;
-                      color: #4c5c56;
+                      color: var(--text-muted);
                       font-size: 13px;
                     "
                   >
@@ -932,7 +960,7 @@
                       width: 40px;
                       height: 40px;
                       border-radius: 50%;
-                      background: #0b6b5b;
+                      background: var(--emerald-600);
                       display: flex;
                       align-items: center;
                       justify-content: center;
@@ -950,7 +978,7 @@
       </section>
 
       <!-- ANTES x DEPOIS -->
-      <section style="background: #0d1b16; color: #fff">
+      <section style="background: var(--surface-dark); color: #fff">
         <div
           class="sec-pad"
           style="max-width: 1180px; margin: 0 auto; padding: 88px 28px"
@@ -1036,7 +1064,7 @@
                       margin: 0;
                       font-size: 15.5px;
                       line-height: 1.5;
-                      color: #cdd8d2;
+                      color: var(--text-light-muted);
                     "
                   >
                     Não tem clareza se seu site gera demanda de clientes pro
@@ -1065,7 +1093,7 @@
                       margin: 0;
                       font-size: 15.5px;
                       line-height: 1.5;
-                      color: #cdd8d2;
+                      color: var(--text-light-muted);
                     "
                   >
                     Mensagem no WhatsApp fica horas sem resposta e a venda
@@ -1094,7 +1122,7 @@
                       margin: 0;
                       font-size: 15.5px;
                       line-height: 1.5;
-                      color: #cdd8d2;
+                      color: var(--text-light-muted);
                     "
                   >
                     Agenda, cadastro e pedido tudo no caderno ou espalhado em
@@ -1105,7 +1133,7 @@
             </div>
             <div
               style="
-                background: linear-gradient(160deg, #0b6b5b, #073d34);
+                background: linear-gradient(160deg, var(--emerald-600), var(--emerald-900));
                 border: 1px solid #127c68;
                 border-radius: 20px;
                 padding: 32px;
@@ -1221,7 +1249,7 @@
       </section>
 
       <!-- SERVIÇOS -->
-      <section id="servicos" style="background: #f4f7f5">
+      <section id="servicos" style="background: var(--bg-subtle)">
         <div
           class="sec-pad"
           style="max-width: 1180px; margin: 0 auto; padding: 88px 28px"
@@ -1236,11 +1264,11 @@
               letter-spacing: -0.02em;
               margin: 0;
               max-width: 560px;
-              color: #0d1b16;
+              color: var(--surface-dark);
             "
           >
             Três formas de trazer mais resultado pro
-            <span style="color: #0b6b5b">seu negócio</span>
+            <span style="color: var(--emerald-600)">seu negócio</span>
           </h2>
           <div
             class="svc-grid"
@@ -1254,7 +1282,7 @@
             <div
               class="hv-card svc-featured"
               style="
-                background: #0b6b5b;
+                background: var(--emerald-600);
                 border: 1px solid transparent;
                 border-radius: 20px;
                 padding: 34px 30px;
@@ -1309,7 +1337,7 @@
               class="hv-card"
               style="
                 background: #fff;
-                border: 1px solid #e6ebe8;
+                border: 1px solid var(--border-light);
                 border-radius: 20px;
                 padding: 30px;
               "
@@ -1327,7 +1355,7 @@
                   height="22"
                   viewBox="0 0 24 24"
                   fill="none"
-                  stroke="#0b6b5b"
+                  stroke="var(--emerald-600)"
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -1342,7 +1370,7 @@
                     font-weight: 700;
                     font-size: 19px;
                     margin: 0;
-                    color: #0d1b16;
+                    color: var(--surface-dark);
                   "
                 >
                   Agente no WhatsApp
@@ -1353,7 +1381,7 @@
                   margin: 0;
                   font-size: 15px;
                   line-height: 1.6;
-                  color: #4c5c56;
+                  color: var(--text-muted);
                 "
               >
                 Responde seu cliente na hora, dia e noite, tira dúvidas e agenda
@@ -1364,7 +1392,7 @@
               class="hv-card"
               style="
                 background: #fff;
-                border: 1px solid #e6ebe8;
+                border: 1px solid var(--border-light);
                 border-radius: 20px;
                 padding: 30px;
               "
@@ -1382,7 +1410,7 @@
                   height="22"
                   viewBox="0 0 24 24"
                   fill="none"
-                  stroke="#0b6b5b"
+                  stroke="var(--emerald-600)"
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -1396,7 +1424,7 @@
                     font-weight: 700;
                     font-size: 19px;
                     margin: 0;
-                    color: #0d1b16;
+                    color: var(--surface-dark);
                   "
                 >
                   Sistema sob medida
@@ -1407,7 +1435,7 @@
                   margin: 0;
                   font-size: 15px;
                   line-height: 1.6;
-                  color: #4c5c56;
+                  color: var(--text-muted);
                 "
               >
                 Agenda, cadastro e controle do seu jeito, num só lugar. Chega de
@@ -1434,17 +1462,17 @@
               letter-spacing: -0.02em;
               margin: 0;
               max-width: 560px;
-              color: #0d1b16;
+              color: var(--surface-dark);
             "
           >
             Alguns exemplos do que eu
-            <span style="color: #0b6b5b">entrego</span>
+            <span style="color: var(--emerald-600)">entrego</span>
           </h2>
           <p
             style="
               font-size: 17px;
               line-height: 1.6;
-              color: #4c5c56;
+              color: var(--text-muted);
               margin: 18px 0 0;
               max-width: 620px;
             "
@@ -1466,7 +1494,7 @@
               class="hv-card"
               style="
                 background: #fff;
-                border: 1px solid #e6ebe8;
+                border: 1px solid var(--border-light);
                 border-radius: 20px;
                 overflow: hidden;
                 display: flex;
@@ -1475,18 +1503,25 @@
             >
               <div
                 class="proj-thumb-wrap"
+                tabindex="0"
                 style="
                   position: relative;
                   aspect-ratio: 16/10;
-                  background: linear-gradient(150deg, #0b6b5b, #073d34);
+                  background: linear-gradient(150deg, var(--emerald-600), var(--emerald-900));
                   overflow: hidden;
                   cursor: pointer;
                 "
                 onclick="
                   openDemoModal(
                     'demonstracoes/salao-beleza/index.html',
-                    'Salão Aurora - Estética & Beleza',
+                    'Studio Elegance - Salão de Beleza',
                   )
+                "
+                onkeydown="
+                  if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    this.click();
+                  }
                 "
               >
                 <picture style="width: 100%; height: 100%; display: block">
@@ -1551,7 +1586,7 @@
                       font-weight: 700;
                       letter-spacing: 0.06em;
                       text-transform: uppercase;
-                      color: #0b6b5b;
+                      color: var(--emerald-600);
                       background: #e4f1ec;
                       padding: 4px 10px;
                       border-radius: 999px;
@@ -1564,7 +1599,7 @@
                       font-weight: 700;
                       font-size: 20px;
                       margin: 12px 0 8px;
-                      color: #0d1b16;
+                      color: var(--surface-dark);
                     "
                   >
                     Salão de Beleza & Estética
@@ -1574,7 +1609,7 @@
                       margin: 0;
                       font-size: 15px;
                       line-height: 1.55;
-                      color: #4c5c56;
+                      color: var(--text-muted);
                     "
                   >
                     Página elegante para estética com vitrine de serviços,
@@ -1583,10 +1618,11 @@
                 </div>
                 <div style="display: flex; gap: 10px; margin-top: 20px">
                   <button
+                    type="button"
                     onclick="
                       openDemoModal(
                         'demonstracoes/salao-beleza/index.html',
-                        'Salão Aurora - Estética & Beleza',
+                        'Studio Elegance - Salão de Beleza',
                       )
                     "
                     class="hv-primary"
@@ -1594,7 +1630,7 @@
                       flex: 1;
                       border: none;
                       cursor: pointer;
-                      background: #0b6b5b;
+                      background: var(--emerald-600);
                       color: #fff;
                       font-weight: 700;
                       font-size: 14px;
@@ -1616,7 +1652,7 @@
                     class="hv-ghost"
                     style="
                       border: 1px solid #d5ddd9;
-                      color: #0d1b16;
+                      color: var(--surface-dark);
                       font-weight: 700;
                       font-size: 14px;
                       padding: 11px 14px;
@@ -1638,7 +1674,7 @@
               class="hv-card"
               style="
                 background: #fff;
-                border: 1px solid #e6ebe8;
+                border: 1px solid var(--border-light);
                 border-radius: 20px;
                 overflow: hidden;
                 display: flex;
@@ -1647,6 +1683,7 @@
             >
               <div
                 class="proj-thumb-wrap"
+                tabindex="0"
                 style="
                   position: relative;
                   aspect-ratio: 16/10;
@@ -1657,8 +1694,14 @@
                 onclick="
                   openDemoModal(
                     'demonstracoes/clinica-medica/index.html',
-                    'Clínica Vitalis - Saúde & Consultas',
+                    'Clínica Vita - Saúde Integrada',
                   )
+                "
+                onkeydown="
+                  if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    this.click();
+                  }
                 "
               >
                 <picture style="width: 100%; height: 100%; display: block">
@@ -1723,7 +1766,7 @@
                       font-weight: 700;
                       letter-spacing: 0.06em;
                       text-transform: uppercase;
-                      color: #0b6b5b;
+                      color: var(--emerald-600);
                       background: #e4f1ec;
                       padding: 4px 10px;
                       border-radius: 999px;
@@ -1736,7 +1779,7 @@
                       font-weight: 700;
                       font-size: 20px;
                       margin: 12px 0 8px;
-                      color: #0d1b16;
+                      color: var(--surface-dark);
                     "
                   >
                     Clínica Médica & Saúde
@@ -1746,7 +1789,7 @@
                       margin: 0;
                       font-size: 15px;
                       line-height: 1.55;
-                      color: #4c5c56;
+                      color: var(--text-muted);
                     "
                   >
                     Institucional para clínicas com especialidades médicas,
@@ -1755,6 +1798,7 @@
                 </div>
                 <div style="display: flex; gap: 10px; margin-top: 20px">
                   <button
+                    type="button"
                     onclick="
                       openDemoModal(
                         'demonstracoes/clinica-medica/index.html',
@@ -1766,7 +1810,7 @@
                       flex: 1;
                       border: none;
                       cursor: pointer;
-                      background: #0b6b5b;
+                      background: var(--emerald-600);
                       color: #fff;
                       font-weight: 700;
                       font-size: 14px;
@@ -1788,7 +1832,7 @@
                     class="hv-ghost"
                     style="
                       border: 1px solid #d5ddd9;
-                      color: #0d1b16;
+                      color: var(--surface-dark);
                       font-weight: 700;
                       font-size: 14px;
                       padding: 11px 14px;
@@ -1810,7 +1854,7 @@
               class="hv-card"
               style="
                 background: #fff;
-                border: 1px solid #e6ebe8;
+                border: 1px solid var(--border-light);
                 border-radius: 20px;
                 overflow: hidden;
                 display: flex;
@@ -1819,6 +1863,7 @@
             >
               <div
                 class="proj-thumb-wrap"
+                tabindex="0"
                 style="
                   position: relative;
                   aspect-ratio: 16/10;
@@ -1831,6 +1876,12 @@
                     'demonstracoes/academia-titan/index.html',
                     'Academia Titan - Fitness & Treino',
                   )
+                "
+                onkeydown="
+                  if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    this.click();
+                  }
                 "
               >
                 <picture style="width: 100%; height: 100%; display: block">
@@ -1895,7 +1946,7 @@
                       font-weight: 700;
                       letter-spacing: 0.06em;
                       text-transform: uppercase;
-                      color: #0b6b5b;
+                      color: var(--emerald-600);
                       background: #e4f1ec;
                       padding: 4px 10px;
                       border-radius: 999px;
@@ -1908,7 +1959,7 @@
                       font-weight: 700;
                       font-size: 20px;
                       margin: 12px 0 8px;
-                      color: #0d1b16;
+                      color: var(--surface-dark);
                     "
                   >
                     Academia & Centro de Treino
@@ -1918,7 +1969,7 @@
                       margin: 0;
                       font-size: 15px;
                       line-height: 1.55;
-                      color: #4c5c56;
+                      color: var(--text-muted);
                     "
                   >
                     Landing page com planos, modalidades de treino e chamada
@@ -1927,6 +1978,7 @@
                 </div>
                 <div style="display: flex; gap: 10px; margin-top: 20px">
                   <button
+                    type="button"
                     onclick="
                       openDemoModal(
                         'demonstracoes/academia-titan/index.html',
@@ -1938,7 +1990,7 @@
                       flex: 1;
                       border: none;
                       cursor: pointer;
-                      background: #0b6b5b;
+                      background: var(--emerald-600);
                       color: #fff;
                       font-weight: 700;
                       font-size: 14px;
@@ -1960,7 +2012,7 @@
                     class="hv-ghost"
                     style="
                       border: 1px solid #d5ddd9;
-                      color: #0d1b16;
+                      color: var(--surface-dark);
                       font-weight: 700;
                       font-size: 14px;
                       padding: 11px 14px;
@@ -1981,7 +2033,7 @@
       </section>
 
       <!-- COMO FUNCIONA -->
-      <section style="background: #f4f7f5">
+      <section style="background: var(--bg-subtle)">
         <div
           class="sec-pad"
           style="max-width: 1180px; margin: 0 auto; padding: 88px 28px"
@@ -1996,11 +2048,11 @@
               letter-spacing: -0.02em;
               margin: 0;
               max-width: 560px;
-              color: #0d1b16;
+              color: var(--surface-dark);
             "
           >
             Simples, do primeiro contato até
-            <span style="color: #0b6b5b">a entrega</span>
+            <span style="color: var(--emerald-600)">a entrega</span>
           </h2>
           <div
             class="steps-grid"
@@ -2019,7 +2071,7 @@
                   width: 46px;
                   height: 46px;
                   border-radius: 12px;
-                  background: #0b6b5b;
+                  background: var(--emerald-600);
                   color: #fff;
                   display: flex;
                   align-items: center;
@@ -2038,7 +2090,7 @@
                   font-weight: 700;
                   font-size: 20px;
                   margin: 0 0 9px;
-                  color: #0d1b16;
+                  color: var(--surface-dark);
                 "
               >
                 Você me chama no WhatsApp
@@ -2048,7 +2100,7 @@
                   margin: 0;
                   font-size: 15.5px;
                   line-height: 1.6;
-                  color: #4c5c56;
+                  color: var(--text-muted);
                 "
               >
                 A gente conversa sobre o seu negócio e onde dá pra ganhar mais
@@ -2062,7 +2114,7 @@
                   width: 46px;
                   height: 46px;
                   border-radius: 12px;
-                  background: #0b6b5b;
+                  background: var(--emerald-600);
                   color: #fff;
                   display: flex;
                   align-items: center;
@@ -2081,7 +2133,7 @@
                   font-weight: 700;
                   font-size: 20px;
                   margin: 0 0 9px;
-                  color: #0d1b16;
+                  color: var(--surface-dark);
                 "
               >
                 Eu monto a proposta
@@ -2091,7 +2143,7 @@
                   margin: 0;
                   font-size: 15.5px;
                   line-height: 1.6;
-                  color: #4c5c56;
+                  color: var(--text-muted);
                 "
               >
                 Mostro o que faz sentido pro seu momento e combino um valor
@@ -2105,7 +2157,7 @@
                   width: 46px;
                   height: 46px;
                   border-radius: 12px;
-                  background: #0b6b5b;
+                  background: var(--emerald-600);
                   color: #fff;
                   display: flex;
                   align-items: center;
@@ -2124,7 +2176,7 @@
                   font-weight: 700;
                   font-size: 20px;
                   margin: 0 0 9px;
-                  color: #0d1b16;
+                  color: var(--surface-dark);
                 "
               >
                 Entrego e acompanho
@@ -2134,7 +2186,7 @@
                   margin: 0;
                   font-size: 15.5px;
                   line-height: 1.6;
-                  color: #4c5c56;
+                  color: var(--text-muted);
                 "
               >
                 Coloco no ar e fico por perto pra ajustar o que precisar. Você
@@ -2167,7 +2219,7 @@
                 aspect-ratio: 1/1;
                 border-radius: 20px;
                 overflow: hidden;
-                background: linear-gradient(150deg, #0b6b5b, #073d34);
+                background: linear-gradient(150deg, var(--emerald-600), var(--emerald-900));
                 box-shadow: 0 20px 40px -20px rgba(11, 107, 91, 0.4);
               "
             >
@@ -2203,7 +2255,7 @@
                 line-height: 1.12;
                 letter-spacing: -0.02em;
                 margin: 0;
-                color: #0d1b16;
+                color: var(--surface-dark);
               "
             >
               Sou a Bianca Atti.
@@ -2243,7 +2295,7 @@
                 align-items: center;
                 gap: 10px;
                 margin-top: 28px;
-                background: #0b6b5b;
+                background: var(--emerald-600);
                 color: #fff;
                 font-weight: 700;
                 font-size: 16px;
@@ -2265,7 +2317,7 @@
       <!-- CTA FINAL -->
       <section
         style="
-          background: linear-gradient(160deg, #0b6b5b, #073d34);
+          background: linear-gradient(160deg, var(--emerald-600), var(--emerald-900));
           color: #fff;
         "
       >
@@ -2313,7 +2365,7 @@
               gap: 10px;
               margin-top: 32px;
               background: #fff;
-              color: #073d34;
+              color: var(--emerald-900);
               font-weight: 700;
               font-size: 17px;
               padding: 17px 30px;
@@ -2322,7 +2374,7 @@
               transition: transform 0.2s;
             "
           >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="#073d34">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--emerald-900)">
               <path
                 d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.85 9.85 0 001.599 5.283l-1 3.652 3.891-1.634zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.074-.149-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.71.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.29.173-1.414z"
               />
@@ -2332,8 +2384,10 @@
         </div>
       </section>
 
+      </main>
+
       <!-- FOOTER -->
-      <footer style="background: #0b141a; color: #cdd8d2">
+      <footer style="background: var(--bg-footer); color: var(--text-light-muted)">
         <div
           style="
             max-width: 1180px;
@@ -2387,7 +2441,7 @@
                 rel="noopener"
                 class="hv-white"
                 style="
-                  color: #cdd8d2;
+                  color: var(--text-light-muted);
                   font-size: 14.5px;
                   transition: color 0.2s;
                 "
@@ -2397,7 +2451,7 @@
                 href="mailto:bianca.atti@gmail.com"
                 class="hv-white"
                 style="
-                  color: #cdd8d2;
+                  color: var(--text-light-muted);
                   font-size: 14.5px;
                   transition: color 0.2s;
                 "
@@ -2415,7 +2469,7 @@
                 "
                 >Atendimento</span
               >
-              <span style="color: #cdd8d2; font-size: 14.5px"
+              <span style="color: var(--text-light-muted); font-size: 14.5px"
                 >100% Remoto / Brasil</span
               >
             </div>
@@ -2452,7 +2506,7 @@
           align-items: center;
           gap: 10px;
           background: #25d366;
-          color: #073d34;
+          color: var(--emerald-900);
           font-weight: 700;
           font-size: 15px;
           padding: 13px 20px;
@@ -2461,7 +2515,7 @@
           transition: transform 0.2s;
         "
       >
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="#073d34">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--emerald-900)">
           <path
             d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.85 9.85 0 001.599 5.283l-1 3.652 3.891-1.634zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.074-.149-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.71.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.29.173-1.414z"
           />
@@ -2472,6 +2526,9 @@
     <!-- MODAL DE VISUALIZAÇÃO DE TEMPLATE COMPLETO -->
     <div
       id="demoModal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="demoModalTitle"
       onclick="if (event.target === this) closeDemoModal();"
       style="
         display: none;
@@ -2507,7 +2564,7 @@
             align-items: center;
             justify-content: space-between;
             padding: 14px 22px;
-            background: #0d1b16;
+            background: var(--surface-dark);
             color: #fff;
             border-bottom: 1px solid #1c2a24;
           "
@@ -2528,7 +2585,7 @@
                 font-size: 11px;
                 font-weight: 700;
                 letter-spacing: 0.05em;
-                background: #0b6b5b;
+                background: var(--emerald-600);
                 color: #fff;
                 padding: 4px 10px;
                 border-radius: 999px;
@@ -2555,6 +2612,7 @@
               <span>Abrir em aba cheia</span> ↗
             </a>
             <button
+              type="button"
               onclick="closeDemoModal()"
               aria-label="Fechar"
               style="
@@ -2588,18 +2646,26 @@
     </div>
 
     <script>
+      var previousActiveElement = null;
+
       function openDemoModal(url, title) {
+        previousActiveElement = document.activeElement;
         document.getElementById("demoIframe").src = url;
         document.getElementById("demoModalTitle").innerText = title;
         document.getElementById("demoModalNewTab").href = url;
         document.getElementById("demoModal").style.display = "flex";
         document.body.style.overflow = "hidden";
+        setTimeout(function() {
+          var closeBtn = document.querySelector('#demoModal button[aria-label="Fechar"]');
+          if (closeBtn) closeBtn.focus();
+        }, 10);
       }
 
       function closeDemoModal() {
         document.getElementById("demoModal").style.display = "none";
         document.getElementById("demoIframe").src = "";
         document.body.style.overflow = "auto";
+        if (previousActiveElement) previousActiveElement.focus();
       }
 
       document.addEventListener("keydown", function (e) {
