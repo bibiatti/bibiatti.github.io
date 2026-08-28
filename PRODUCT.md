@@ -42,7 +42,7 @@ Desenvolvimento direto, sem termos técnicos e focado em gerar demanda e vendas 
 
 1. **Clareza acima de tudo**: Cada frase deve ser compreensível para qualquer dono de negócio em 3 segundos.
 2. **Ação imediata**: O canal de contato (WhatsApp) deve estar visível e acessível em qualquer ponto da página.
-3. **Padrão visual premium**: Tipografia equilibrada, contraste WCAG AA, paleta esmeralda (#0b6b5b) e fotografia autêntica.
+3. **Padrão visual premium**: Tipografia equilibrada, contraste WCAG AA, paleta índigo-carbono (#37307e) e fotografia autêntica.
 
 ## Accessibility & Inclusion
 

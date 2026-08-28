@@ -1,59 +1,57 @@
 ---
-name: Bianca Atti Portfolio
+name: Bianca Atti Portfolio — Comprovante
 description: Portfólio de conversão para desenvolvedora de soluções digitais e agentes de IA
 colors:
-  primary: "#0b6b5b"
-  primary-hover: "#073d34"
-  primary-glow: "#127c68"
-  accent-light: "#e4f1ec"
-  accent-mint: "#b8efd6"
-  success-green: "#16b56a"
-  dark-bg: "#0d1b16"
-  dark-card: "#14261f"
-  dark-border: "#23372e"
-  light-bg: "#ffffff"
-  light-surface: "#f4f7f5"
-  text-ink: "#10201b"
-  text-heading: "#0d1b16"
-  text-body: "#45554f"
-  text-muted: "#4c5c56"
-  text-nav: "#43524d"
-  text-dark-muted: "#a9bab3"
+  paper: "#f6f1e4"
+  paper-deep: "#ece1c4"
+  paper-bright: "#fffdf6"
+  paper-line: "#d9caa0"
+  ink: "#201b14"
+  ink-soft: "#5b5344"
+  ink-faint: "#948a6d"
+  carbon: "#37307e"
+  carbon-deep: "#241f57"
+  carbon-bright: "#4a41a8"
+  carbon-tint: "#e7e4f5"
+  stamp-green: "#2e7a50"
+  stamp-green-tint: "#dcede1"
+  stamp-red: "#a8462f"
+  stamp-red-tint: "#f3e2dc"
+  wa-green: "#25d366"
 typography:
   display:
-    fontFamily: "Bricolage Grotesque, sans-serif"
-    fontSize: "56px"
-    fontWeight: 800
-    lineHeight: 1.03
-    letterSpacing: "-0.03em"
-  headline:
-    fontFamily: "Bricolage Grotesque, sans-serif"
-    fontSize: "40px"
-    fontWeight: 800
-    lineHeight: 1.08
-    letterSpacing: "-0.02em"
-  title:
-    fontFamily: "Bricolage Grotesque, sans-serif"
-    fontSize: "20px"
+    fontFamily: "Space Grotesk, sans-serif"
+    fontSize: "55px"
     fontWeight: 700
+    lineHeight: 1.04
+    letterSpacing: "-0.02em"
+  headline:
+    fontFamily: "Space Grotesk, sans-serif"
+    fontSize: "39px"
+    fontWeight: 700
+    lineHeight: 1.1
+    letterSpacing: "-0.015em"
+  title:
+    fontFamily: "Space Grotesk, sans-serif"
+    fontSize: "19px"
+    fontWeight: 600
     lineHeight: 1.3
   body:
-    fontFamily: "Manrope, system-ui, sans-serif"
+    fontFamily: "IBM Plex Sans, system-ui, sans-serif"
     fontSize: "17px"
     fontWeight: 400
     lineHeight: 1.6
   label:
-    fontFamily: "Manrope, system-ui, sans-serif"
-    fontSize: "13px"
-    fontWeight: 700
+    fontFamily: "IBM Plex Mono, ui-monospace, monospace"
+    fontSize: "12.5px"
+    fontWeight: 600
     letterSpacing: "0.06em"
 rounded:
+  ticket: "14px"
+  button: "10px"
   pill: "999px"
-  card: "20px"
-  button: "12px"
-  chip: "999px"
+  small: "8px"
   avatar: "50%"
-  badge: "8px"
 spacing:
   xs: "8px"
   sm: "14px"
@@ -63,177 +61,206 @@ spacing:
   section: "88px"
 components:
   button-primary:
-    backgroundColor: "{colors.primary}"
-    textColor: "{colors.light-bg}"
+    backgroundColor: "{colors.carbon}"
+    textColor: "{colors.paper-bright}"
     rounded: "{rounded.button}"
-    padding: "16px 26px"
+    padding: "15px 24px"
   button-primary-hover:
-    backgroundColor: "{colors.primary-hover}"
+    backgroundColor: "{colors.carbon-deep}"
   button-ghost:
-    backgroundColor: "{colors.light-bg}"
-    textColor: "{colors.text-ink}"
+    backgroundColor: "{colors.paper-bright}"
+    textColor: "{colors.ink}"
     rounded: "{rounded.button}"
-    padding: "16px 24px"
+    padding: "15px 24px"
   button-ghost-hover:
-    backgroundColor: "#f4fbf8"
-    textColor: "{colors.primary}"
-  button-wa-pill:
-    backgroundColor: "{colors.primary}"
-    textColor: "{colors.light-bg}"
-    rounded: "{rounded.pill}"
-    padding: "11px 20px"
-  card-project:
-    backgroundColor: "{colors.light-bg}"
-    rounded: "{rounded.card}"
+    borderColor: "{colors.carbon}"
+    textColor: "{colors.carbon}"
+  ticket-card:
+    backgroundColor: "{colors.paper-bright}"
+    rounded: "{rounded.ticket}"
     padding: "22px"
-  chip-label:
-    backgroundColor: "{colors.accent-light}"
-    textColor: "{colors.primary}"
-    rounded: "{rounded.chip}"
+  proj-tag:
+    backgroundColor: "{colors.carbon-tint}"
+    textColor: "{colors.carbon}"
+    rounded: "{rounded.pill}"
     padding: "4px 10px"
 ---
 
-# Design System: Bianca Atti Portfolio
+# Design System: Bianca Atti Portfolio — "Comprovante"
 
 ## Overview
 
-**Creative North Star: "A Consultora de Confiança"**
+**Creative North Star: "O Comprovante Digital"**
 
-O sistema é construído sobre uma tensão deliberada: é ao mesmo tempo caloroso e preciso. O verde esmeralda profundo (`#0b6b5b`) funciona como a cor de uma pessoa confiável — não de uma startup de tecnologia. A tipografia combina a força expressiva do Bricolage Grotesque nos títulos com a clareza humanista do Manrope no corpo, criando uma página que se sente escrita por uma pessoa real, não por um template.
+O sistema traduz a promessa da Bianca — transformar o caos manual (caderno,
+grupos de WhatsApp, planilhas soltas) numa operação organizada e confirmada —
+para o vocabulário visual do universo dela e dos clientes dela: nota de
+serviço, recibo, via duplicada, carimbo de confirmado. Não é fintech nem
+"startup verde"; é papel, carbono e tinta de carimbo — o objeto físico que
+todo pequeno negócio brasileiro já segurou na mão.
 
-A densidade é média: espaço generoso entre seções (88px), mas grupos internos coesos. A página não respira ansiosa nem é austera — é organizada como uma boa conversa. O WhatsApp é o ponto de chegada de cada seção, posicionado sem ser agressivo.
-
-O dark mode existe apenas na seção "Antes × Depois" (`#0d1b16`), como um contraste dramático e intencional que separa o problema da solução. Não é um modo alternativo — é um dispositivo narrativo.
+A cor de marca deixa de ser o esmeralda genérico de SaaS e passa a ser um
+índigo-violeta profundo (`#37307e`), a cor da tinta de carbono das vias
+duplicadas antigas — confiável, oficial, mas quente por estar sobre papel
+kraft, nunca sobre preto. A tipografia mistura o geométrico contemporâneo do
+Space Grotesk nos títulos com o humanista do IBM Plex Sans no corpo, e usa o
+IBM Plex Mono como "tinta de carimbo" — números de item, timestamps, códigos
+e selos.
 
 **Key Characteristics:**
-- Verde esmeralda como cor de confiança, não de tecnologia
-- Tipografia em dois registros: display expressivo + corpo legível
-- Fundo claro dominante com dark strip narrativo pontual
-- WhatsApp como CTA universal, sempre acessível
-- Micro-animações de floating e bubbleIn apenas no hero — não espalhadas
+- Papel kraft como fundo dominante — nunca preto ou near-black em seção alguma
+- Índigo-carbono como cor de confiança/ação, não esmeralda nem terracota
+- Mono (IBM Plex Mono) só em rótulos, timestamps e selos — nunca em parágrafos
+- Bordas denteadas/picotadas (perfuração) e cantos cortados só nos 2 ou 3
+  pontos que representam fisicamente "papel" (recibo do hero, via de footer)
+- O recibo impresso da conversa de WhatsApp no hero é o elemento assinatura —
+  substitui qualquer mockup de celular genérico
+- Numeração (1/2/3) usada só na seção "Como funciona", porque ali é uma
+  sequência real de etapas — não decoração
 
 ## Colors
 
-O verde esmeralda é a cor da promessa cumprida. Tudo o mais serve de suporte.
+O índigo-carbono é a tinta que confirma. O resto é papel e selo.
 
 ### Primary
-- **Esmeralda Profundo** (`#0b6b5b`): Cor da marca. Usada em botões primários, links ativos, ícones de check, badges inline e o avatar do header. Seu rarity é relativa — está presente mas nunca decora.
-- **Esmeralda Noturna** (`#073d34`): Estado hover de todos os elementos primários. Escurece o esmeralda sem mudar o tom.
-- **Esmeralda Viva** (`#127c68`): Borda do card "Depois, comigo" e gradientes de projetos. Mais saturada que o primary para contraste em fundo escuro.
+- **Carbono** (`#37307e`): Cor da marca. Botões primários, links, ícones de
+  check funcional, número de logo. Nunca usado como textura decorativa.
+- **Carbono Profundo** (`#241f57`): Hover de todos os elementos primários.
+- **Carbono Vivo** (`#4a41a8`): Glow do recibo no hero, variações de gradiente
+  nos thumbnails de projeto.
+- **Carbono Tinta Suave** (`#e7e4f5`): Fundo de chips/tags. Nunca superfície de
+  card inteiro.
 
-### Secondary
-- **Verde Menta Suave** (`#e4f1ec`): Fundo de chips e badges de status. Nunca como superfície de card.
-- **Verde Seleção** (`#b8efd6`): `::selection` highlight. Um detalhe que só quem seleciona texto vê.
-- **Verde Sucesso** (`#16b56a`): O ponto de status "online agora" no hero. Não reutilizado em nenhum outro lugar.
+### Selos (uso funcional, não decorativo)
+- **Verde Confirmado** (`#2e7a50`): Selo "confirmado", marcas ✓ da via
+  "Depois". Só aparece como confirmação de algo que deu certo.
+- **Vermelho Carimbo** (`#a8462f`): Marcas ✕ da via "Antes". Só aparece como
+  sinalização de problema. Nunca em botões nem títulos.
 
-### Neutral
-- **Tinta Principal** (`#10201b`): Cor base do `body`. Quase-preto com matiz verde para não criar contraste clínico.
-- **Tinta Título** (`#0d1b16`): Headings e textos de ênfase. Mais fundo que o body.
-- **Cinza Verde Corpo** (`#45554f`): Parágrafos principais e descrições em fundo claro.
-- **Cinza Verde Suave** (`#4c5c56`): Descrições secundárias em cards.
-- **Cinza Navegação** (`#43524d`): Links do header no estado default.
-- **Superfície Principal** (`#ffffff`): Fundo do body, cards de projeto.
-- **Superfície Alternada** (`#f4f7f5`): Seções Serviços e Como Funciona. Alternância suave, não contraste.
-- **Dark Strip** (`#0d1b16`): Fundo da seção "Antes × Depois". Modo escuro pontual e narrativo.
-- **Dark Card** (`#14261f`): Superfície de card dentro do dark strip.
-- **Dark Border** (`#23372e`): Bordas dentro do dark strip.
-- **Muted Dark** (`#a9bab3`): Texto de suporte na seção dark.
+### Papel e Tinta
+- **Papel** (`#f6f1e4`): Fundo padrão do body.
+- **Papel Profundo** (`#ece1c4`): Seções alternadas (Serviços, Como Funciona)
+  e a via "Antes".
+- **Papel Vívido** (`#fffdf6`): Superfície de cards e do recibo — mais claro
+  que o fundo pra parecer "papel novo saindo da impressora".
+- **Linha de Papel** (`#d9caa0`): Bordas tracejadas, divisórias picotadas.
+- **Tinta** (`#201b14`): Texto base e headings.
+- **Tinta Suave** (`#5b5344`): Parágrafos secundários.
+- **Tinta Fraca** (`#948a6d`): Timestamps, legendas, texto quase apagado.
 
-**The Esmeralda Única Rule.** O esmeralda aparece em botões, ícones de check e destaques de texto — mas nunca como fundo de superfície grande nem como cor decorativa sem propósito funcional. Quando em dúvida, usar `#e4f1ec` (accent-light) em vez do primary.
+**The Single Ink Rule.** Carbono aparece em botões, links e destaques — nunca
+como fundo de seção inteira fora do bloco de CTA final e do header do modal.
+Quando em dúvida, usar `carbon-tint` em vez de `carbon` sólido.
 
 ## Typography
 
-**Display Font:** Bricolage Grotesque (600, 700, 800 — optical size 12–96)
-**Body Font:** Manrope (400, 500, 600, 700)
+**Display Font:** Space Grotesk (500, 600, 700)
+**Body Font:** IBM Plex Sans (400, 500, 600, 700)
+**Utility Font:** IBM Plex Mono (500, 600, 700) — rótulos, timestamps, selos,
+números de item, letreiro do footer.
 
-**Character:** O Bricolage Grotesque tem uma tensão entre o geométrico e o humanista que faz os títulos parecerem assertivos sem serem frios. O Manrope é o oposto do jargão técnico — leve, legível e caloroso. A combinação transmite "profissional que fala sua língua".
+**Character:** Space Grotesk tem cantos levemente quadrados que lembram
+carimbo de borracha sem virar tipografia fria. IBM Plex Sans é neutro e
+extremamente legível — a voz "sem termo técnico" da Bianca. IBM Plex Mono
+carrega o peso semântico de "isso é um dado/registro", igual a uma máquina de
+recibo.
 
 ### Hierarchy
-- **Display** (800, 56px, lh 1.03, ls -0.03em): Headline principal do hero. Uma instância na página. Escala para 40px em tablet, 33px em mobile.
-- **Headline** (800, 40px, lh 1.08, ls -0.02em): Títulos de seção (Serviços, Projetos, Como Funciona). Escala para 32px em tablet, 27px em mobile.
-- **Title** (700, 20px, lh 1.3): Títulos de card e subtítulos dentro de seções. Sempre Bricolage Grotesque.
-- **Body** (400–600, 17–18.5px, lh 1.6): Parágrafos principais. `text-wrap: pretty`. Sem limite de linha explícito, mas containers limitam a ~60ch na prática.
-- **Label** (700, 13px, ls 0.06em, uppercase): Badges e chips (ex: "Projeto de demonstração", "HOJE"). Sempre em caps, nunca em titulos.
+- **Display** (700, 55px, lh 1.04): H1 do hero. Escala para 40px em tablet,
+  33px em mobile.
+- **Headline** (700, 39px, lh 1.1): Títulos de seção. Escala para 31px
+  tablet, 26px mobile.
+- **Title** (600, 19–20px): Títulos de card.
+- **Body** (400–600, 15–18px, lh 1.55–1.65): Parágrafos. `text-wrap: pretty`.
+- **Label/Mono** (600–700, 11–13px, ls 0.05–0.08em, uppercase): Kickers,
+  tags, selos, timestamps do recibo. Sempre IBM Plex Mono.
 
-**The Balance Rule.** Todos os `h1`, `h2`, `h3` usam `text-wrap: balance`. Nenhum heading termina com uma palavra sozinha na linha. Parágrafos usam `text-wrap: pretty`.
+**The Balance Rule.** `h1`/`h2`/`h3` usam `text-wrap: balance`.
 
 ## Layout
 
-Container máximo de 1180px, centralizado, com padding horizontal de 28px (reduzido a 24px em mobile). O grid é contextual: 2 colunas no hero (1.05fr + 0.95fr), 2 colunas no Antes/Depois, 3 colunas em Serviços/Projetos/Steps, 2 colunas em Quem Sou (0.8fr + 1.2fr). Em viewports ≤900px, todos os grids colapsam para 1 coluna.
+Container 1180px, padding 28px (24px mobile via clip nas seções). Grid
+contextual: hero 1.05fr/0.95fr, vias 1fr/16px/1fr (com perfuração central),
+serviços 1.15fr/1fr/1fr, projetos 3 colunas, quem-sou 0.78fr/1.22fr. Tudo
+colapsa pra 1 coluna ≤900px.
 
-Seções alternam entre `#ffffff` e `#f4f7f5` para separação sem usar divisores. O padding vertical de seção é 88px desktop / 64px mobile. O header é `position: sticky` com `backdrop-filter: blur(10px)` — a página rola por baixo sem perder o acesso ao CTA.
+Seções alternam entre `paper` (`#f6f1e4`) e `paper-deep` (`#ece1c4`) — nunca
+para preto. Padding vertical de seção: 88px desktop / 64px mobile.
 
-**The Section Rhythm Rule.** Nenhuma seção começa sem 88px de respiro vertical (64px mobile). O espaço acima de um heading é sempre maior que o abaixo.
+**The No-Black-Section Rule.** Nenhuma seção usa fundo preto ou near-black —
+inclusive o "antes" da comparação, que no sistema anterior era dark mode.
+Aqui o contraste entre "antes" e "depois" vem da textura do papel (fosco vs.
+crisp) e da borda (tracejada vs. sólida carbono), não de luz vs. escuridão —
+evita o clichê de "hero claro + bloco quase-preto" que qualquer gerador de
+design cai por padrão.
 
-## Elevation & Depth
+## Signature Component: O Recibo do Hero
 
-O sistema usa sombras com offset e blur generosos, sempre no tom esmeralda, nunca cinza. Superfícies em repouso são planas; sombras aparecem como resposta ao estado (hover, featured).
+Um recibo impresso simulando a conversa real de WhatsApp, com borda inferior
+picotada (`clip-path` em zigue-zague — classe `.torn-bottom`), saindo de uma
+"boca de impressora" (barra escura de 14px) no topo. Ao carregar a página, o
+recibo desliza pra baixo (`print-out`) e cada linha da conversa aparece em
+sequência (`bubble-in` com delay incremental), terminando com um selo
+"CONFIRMADO ✓" que salta em rotação (`stamp-thud`). É o único momento de
+animação orquestrada da página — tudo mais é reveal de scroll discreto.
 
-### Shadow Vocabulary
-- **Hero Float** (`0 40px 80px -30px rgba(7,61,52,.55)`): Sombra profunda sob o mockup de WhatsApp no hero. Singular.
-- **Card Hover** (`0 20px 40px -20px rgba(11,107,91,.22)`): Surge ao hover em cards de projeto. `.hv-card` class.
-- **Button Primary Hover** (`0 16px 36px -12px rgba(11,107,91,.9)`): Glow esmeralda sob botões primários ao hover.
-- **Button WA Hover** (`0 10px 24px -8px rgba(11,107,91,.8)`): Variante mais suave para botão da header.
-- **About Photo** (`0 20px 40px -20px rgba(11,107,91,.4)`): Sombra estática sob a foto da Bianca.
-- **Featured Card** (`0 30px 60px -30px rgba(11,107,91,.9)`): Card "Depois, comigo" com sombra intensa por ser o estado desejado.
-- **WA Button Float** (`0 6px 18px -8px rgba(11,107,91,.7)`): Header CTA pill.
+## Perfuração (Perforation)
 
-**The Emerald Shadow Rule.** Nenhuma sombra usa `rgba(0,0,0,...)` exceto no mockup de WhatsApp (onde imita a sombra real de um celular). Todas as demais sombras são derivadas do esmeralda.
+Dois usos, nunca mais que isso:
+1. `.perf-h` — linha horizontal pontilhada por buracos (radial-gradient) entre
+   o hero e a seção "Antes × Depois", e no topo do footer.
+2. `.perf-v` — a mesma técnica na vertical, separando as duas "vias" (Antes /
+   Depois) como se fossem uma nota rasgada ao meio.
+
+**The Restraint Rule.** Perfuração/carimbo/via só nesses pontos. O resto da
+página (serviços, projetos, como funciona, quem sou) usa a mesma paleta e
+tipografia mas em cards simples — o "papel rasgado" não se repete em todo
+elemento só porque é o tema.
 
 ## Shapes
 
-O sistema usa bordas arredondadas generosas. Cards têm 20px de raio — suficientemente suaves para parecerem amigáveis, sem serem infantis. Botões primários têm 12px. Pills (WhatsApp header, badges) usam `border-radius: 999px`. Avatares são círculos perfeitos (50%). O badge de status do hero tem 8px.
-
-Bordas são usadas com moderação: `1px solid` em cards no tom da superfície (claro ou escuro), nunca decorativas ou espessas. O header usa `1px solid #eceeed` como separador do conteúdo que rola por baixo.
-
-**The Soft Edge Rule.** Nenhum elemento interativo tem `border-radius: 0`. O sistema não tem arestas vivas — nem mesmo o avatar de letra no mockup de WhatsApp.
+Cards e recibo: raio 14px. Botões: 10px. Pills/badges: 999px. Selo do
+"confirmado": pill com borda 1.5px sólida, sem preenchimento. Números de
+etapa (Como Funciona): círculo com borda tracejada — não quadrado
+preenchido, pra diferenciar de um badge comum e sugerir "carimbo em
+trânsito".
 
 ## Components
 
 ### Buttons
+- **Primary:** `#37307e`, texto branco, raio 10px, sombra índigo. Hover:
+  `#241f57` + lift 2px.
+- **Ghost:** Fundo `paper-bright`, borda `paper-line`, texto `ink`. Hover:
+  borda e texto viram `carbon`.
+- **WhatsApp flutuante:** único elemento que usa o verde real do WhatsApp
+  (`#25d366`) — funciona como selo de plataforma, não como cor de marca.
 
-O comportamento dos botões é tátil: eles sobem 2px no hover e afundam levemente no active (`scale(0.98)`). O movimento vem da classe `.hv-primary` / `.hv-wa` / `.hv-ghost`.
+### Tags / Selos
+- **Proj Tag:** fundo `carbon-tint`, texto `carbon`, mono, pill.
+- **Selo Confirmado:** borda sólida `stamp-green`, sem fundo, mono uppercase,
+  usado só no recibo do hero e na via "Depois".
 
-- **Shape:** Raio de 12px (botões inline) ou 999px (pill do header)
-- **Primary:** Fundo `#0b6b5b`, texto branco, padding 16px 26px, shadow esmeralda. Hover: fundo `#073d34` + glow `0 16px 36px -12px rgba(11,107,91,.9)` + lift 2px
-- **Ghost:** Fundo `#fff`, borda `1.5px solid #d5ddd9`, texto `#0d1b16`. Hover: borda e texto mudam para `#0b6b5b`, fundo `#f4fbf8`
-- **WA Pill (header):** Como Primary mas `border-radius: 999px`, padding 11px 20px
-
-### Chips / Badges
-
-- **Label Chip:** Fundo `#e4f1ec`, texto `#0b6b5b`, 700, 11.5px uppercase, raio 999px, padding 4px 10px. Usado em cards de projeto ("Projeto de demonstração")
-- **Status Pill:** Fundo `#0b6b5b`, texto branco, 12px bold, raio 999px. Usado no hero e no mockup de WhatsApp
-
-### Cards / Containers
-
-- **Project Card:** Fundo branco, borda `1px solid #e6ebe8`, raio 20px, padding 22px. Hover: borda muda para `#0b6b5b`, lift `translateY(-5px)`, shadow card hover
-- **Dark Card (Before/After):** Fundo `#14261f`, borda `1px solid #23372e`, raio 20px, padding 32px
-- **Featured Card ("Depois"):** Gradiente `linear-gradient(160deg, #0b6b5b, #073d34)`, borda `1px solid #127c68`, raio 20px, sombra profunda
-
-### Navigation
-
-- **Header:** Sticky, `background: rgba(255,255,255,.86)`, `backdrop-filter: blur(10px)`, `border-bottom: 1px solid #eceeed`
-- **Links:** Manrope 600, 15px, `#43524d`. Sem underline. Ocultos em mobile (≤640px)
-- **Logo:** Bricolage Grotesque 800, 20px, `#10201b`, ls -0.02em
-
-### WhatsApp Mockup (Signature Component)
-
-O mockup de smartphone no hero é um componente assinatura: simula uma conversa real de atendimento com animações escalonadas (`bubbleIn` + delays). Representa o produto vendido (agente de WhatsApp) em vez de mostrar uma screenshot genérica. Fundo `#0b141a` (dark phone body), conversa em `#efe7dd` (WhatsApp beige), bolhas do cliente em branco, bolhas do agente em `#d9fdd3` (verde WhatsApp). Animação `floatY` de 6s no container.
+### Cards
+- **Ticket/Service Card:** fundo `paper-bright`, borda `paper-line`, raio
+  14px. Hover: lift 4px + borda `carbon`.
+- **Via Card:** "Antes" = `paper-deep` + borda tracejada `ink-faint`.
+  "Depois" = `paper-bright` + borda sólida `carbon` + selo "confirmado" no
+  canto.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** usar `#0b6b5b` como cor de ação e confiança — em botões, checks e ícones funcionais.
-- **Do** manter `text-wrap: balance` em todos os headings e `text-wrap: pretty` em parágrafos.
-- **Do** usar sombras derivadas do esmeralda (`rgba(11,107,91,...)`) para todos os glows e halos.
-- **Do** adicionar `translateY(-2px)` + shadow no hover de botões e `translateY(-5px)` em cards.
-- **Do** respeitar `prefers-reduced-motion`: desativar todas as animações e transições quando solicitado.
-- **Do** manter o CTA de WhatsApp acessível em toda seção — no header (sticky), no hero, em Quem Sou, e no footer.
+- **Do** usar `carbon` (`#37307e`) como cor de ação — botões, links, ícones
+  funcionais.
+- **Do** manter mono (IBM Plex Mono) só para dados/rótulos/selos.
+- **Do** manter o CTA de WhatsApp acessível em toda seção.
+- **Do** respeitar `prefers-reduced-motion`.
 
 ### Don't:
-- **Don't** usar gradiente de texto. Ênfase vem de peso (800) ou cor sólida do primary.
-- **Don't** usar sombras `rgba(0,0,0,...)` em elementos de UI (apenas no mockup de telefone do hero).
-- **Don't** animar a imagem da foto da Bianca diretamente — apenas o container pode receber feedback.
-- **Don't** usar o dark background (`#0d1b16`) fora da seção narrativa Antes/Depois e do footer — é um dispositivo dramático, não um tema alternativo.
-- **Don't** criar seções com `border-left` colorido em cards ou listas — o sistema não usa esse padrão.
-- **Don't** adicionar números de seção (01/02/03) — a hierarquia visual já organiza a sequência.
+- **Don't** usar fundo preto/near-black em qualquer seção.
+- **Don't** usar terracota como cor de destaque dominante (só o vermelho de
+  selo, com uso mínimo e só na via "Antes").
+- **Don't** usar serifada em título ou corpo.
+- **Don't** repetir perfuração/carimbo fora dos pontos documentados acima.
+- **Don't** usar números de seção (01/02/03) fora de "Como Funciona", onde a
+  sequência é real.
