@@ -241,6 +241,15 @@
         background: rgba(11,107,91,0.32) !important;
       }
 
+      /* título rotativo (automações): todas as frases na mesma célula, largura = a maior */
+      .rot { display: inline-grid; color: var(--emerald-600); }
+      .rot > span { grid-area: 1 / 1; opacity: 0; transition: opacity 0.4s ease; }
+      .rot > span.on { opacity: 1; }
+      .sr-only {
+        position: absolute; width: 1px; height: 1px; overflow: hidden;
+        clip: rect(0 0 0 0); white-space: nowrap;
+      }
+
       /* responsivo */
       @media (max-width: 900px) {
         .hero-grid {
@@ -1446,6 +1455,282 @@
         </div>
       </section>
 
+      <!-- AUTOMAÇÕES -->
+      <section id="automacoes" style="background: var(--bg-subtle)">
+        <div
+          class="sec-pad"
+          style="max-width: 1180px; margin: 0 auto; padding: 88px 28px"
+        >
+          <h2
+            class="h2-big"
+            style="
+              font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
+              font-weight: 800;
+              font-size: 40px;
+              line-height: 1.08;
+              letter-spacing: -0.02em;
+              margin: 0;
+              max-width: 760px;
+              color: var(--surface-dark);
+            "
+          >
+            Tarefa que se repete
+            <span class="sr-only">todo dia, toda semana ou todo mês?</span>
+            <span class="rot" aria-hidden="true"
+              ><span>todo dia?</span><span class="on">toda semana?</span
+              ><span>todo mês?</span></span
+            ><br />
+            Dá pra automatizar!
+          </h2>
+          <p
+            style="
+              font-size: 17px;
+              line-height: 1.6;
+              color: var(--text-muted);
+              margin: 18px 0 0;
+              max-width: 640px;
+            "
+          >
+            Se alguém passa horas copiando e colando informações de um lugar
+            para outro, respondendo a mesma mensagem pra vários clientes ou
+            conferindo lista na mão, deixa essa parte comigo e você fica só com
+            a revisão final.
+          </p>
+          <div
+            class="svc-grid"
+            style="
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr;
+              gap: 22px;
+              margin-top: 48px;
+            "
+          >
+            <div
+              class="hv-card"
+              style="
+                background: #fff;
+                border: 1px solid var(--border-light);
+                border-radius: 20px;
+                padding: 30px;
+              "
+            >
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: 10px;
+                  margin-bottom: 14px;
+                "
+              >
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="var(--emerald-600)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <path d="M3 9h18M3 15h18M9 3v18" />
+                </svg>
+                <h3
+                  style="
+                    font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
+                    font-weight: 700;
+                    font-size: 19px;
+                    margin: 0;
+                    color: var(--surface-dark);
+                  "
+                >
+                  Dados organizados sem esforço
+                </h3>
+              </div>
+              <p
+                style="
+                  margin: 0;
+                  font-size: 15px;
+                  line-height: 1.6;
+                  color: var(--text-muted);
+                "
+              >
+                Planilha bagunçada, relatório em PDF, lista de clientes
+                duplicada. Tudo vira uma base limpa, pronta pra usar.
+              </p>
+            </div>
+            <div
+              class="hv-card"
+              style="
+                background: #fff;
+                border: 1px solid var(--border-light);
+                border-radius: 20px;
+                padding: 30px;
+              "
+            >
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: 10px;
+                  margin-bottom: 14px;
+                "
+              >
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="var(--emerald-600)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z" />
+                </svg>
+                <h3
+                  style="
+                    font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
+                    font-weight: 700;
+                    font-size: 19px;
+                    margin: 0;
+                    color: var(--surface-dark);
+                  "
+                >
+                  Contatos que chegam separados
+                </h3>
+              </div>
+              <p
+                style="
+                  margin: 0;
+                  font-size: 15px;
+                  line-height: 1.6;
+                  color: var(--text-muted);
+                "
+              >
+                Cada novo contato chega já qualificado: quem está pronto pra
+                comprar, quem precisa de mais conversa e quem não é o seu
+                público.
+              </p>
+            </div>
+            <div
+              class="hv-card"
+              style="
+                background: #fff;
+                border: 1px solid var(--border-light);
+                border-radius: 20px;
+                padding: 30px;
+              "
+            >
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: 10px;
+                  margin-bottom: 14px;
+                "
+              >
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="var(--emerald-600)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"
+                  />
+                  <path d="M14 2v6h6M8 13h8M8 17h5" />
+                </svg>
+                <h3
+                  style="
+                    font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
+                    font-weight: 700;
+                    font-size: 19px;
+                    margin: 0;
+                    color: var(--surface-dark);
+                  "
+                >
+                  Rascunhos prontos pra revisar
+                </h3>
+              </div>
+              <p
+                style="
+                  margin: 0;
+                  font-size: 15px;
+                  line-height: 1.6;
+                  color: var(--text-muted);
+                "
+              >
+                Orçamentos, respostas e mensagens de retorno já saem escritos.
+                Você só confere e envia.
+              </p>
+            </div>
+          </div>
+          <div
+            style="
+              margin-top: 22px;
+              background: var(--surface-dark);
+              border-radius: 20px;
+              padding: 34px 30px;
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              justify-content: space-between;
+              gap: 24px;
+            "
+          >
+            <div style="max-width: 640px">
+              <h3
+                style="
+                  font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
+                  font-weight: 700;
+                  font-size: 21px;
+                  margin: 0 0 10px;
+                  color: #fff;
+                "
+              >
+                Nada sai sem você ver
+              </h3>
+              <p
+                style="
+                  margin: 0;
+                  font-size: 15.5px;
+                  line-height: 1.6;
+                  color: #d3ebe4;
+                "
+              >
+                Toda automação avisa quando algo não bate: um número que não
+                fecha, um dado faltando, um caso fora da regra. Nesses casos ela
+                para e manda a dúvida pra você, sem tentar adivinhar.
+              </p>
+            </div>
+            <a
+              href="https://wa.me/5551993663009?text=Oi%20Bianca%2C%20vi%20seu%20site%20e%20queria%20automatizar%20uma%20tarefa%20do%20meu%20neg%C3%B3cio."
+              target="_blank"
+              rel="noopener"
+              class="hv-wa"
+              style="
+                display: inline-flex;
+                align-items: center;
+                gap: 10px;
+                background: var(--emerald-600);
+                color: #fff;
+                font-weight: 700;
+                font-size: 16px;
+                padding: 14px 24px;
+                border-radius: 12px;
+              "
+            >
+              Me conta qual tarefa toma mais tempo da sua semana
+            </a>
+          </div>
+        </div>
+      </section>
+
       <!-- PROJETOS -->
       <section id="projetos" style="background: #fff">
         <div
@@ -1477,8 +1762,8 @@
               max-width: 620px;
             "
           >
-            Projetos de demonstração pra você ver o padrão do meu trabalho. Cada
-            um pode virar exatamente a cara do seu negócio.
+            Dois sites de clientes que já estão no ar e um projeto de
+            demonstração. Cada um pode virar exatamente a cara do seu negócio.
           </p>
           <div
             class="proj-grid"
@@ -1489,7 +1774,7 @@
               margin-top: 48px;
             "
           >
-            <!-- PROJETO 1: SALÃO DE BELEZA -->
+            <!-- PROJETO 1: BRUNA MONGELÔS (cliente real) -->
             <article
               class="hv-card"
               style="
@@ -1501,37 +1786,29 @@
                 flex-direction: column;
               "
             >
-              <div
+              <a
                 class="proj-thumb-wrap"
-                tabindex="0"
+                href="https://brunamongelospsicologa.com.br"
+                target="_blank"
+                rel="noopener"
+                aria-label="Abrir o site da Bruna Mongelôs em nova aba"
                 style="
                   position: relative;
                   aspect-ratio: 16/10;
                   background: linear-gradient(150deg, var(--emerald-600), var(--emerald-900));
                   overflow: hidden;
+                  display: block;
                   cursor: pointer;
-                "
-                onclick="
-                  openDemoModal(
-                    'demonstracoes/salao-beleza/index.html',
-                    'Studio Elegance - Salão de Beleza',
-                  )
-                "
-                onkeydown="
-                  if (event.key === 'Enter' || event.key === ' ') {
-                    event.preventDefault();
-                    this.click();
-                  }
                 "
               >
                 <picture style="width: 100%; height: 100%; display: block">
                   <source
-                    srcset="images/webp/salaobelezaprint.webp"
+                    srcset="images/webp/brunaprint.webp"
                     type="image/webp"
                   />
                   <img
-                    src="images/salaobelezaprint.png"
-                    alt="Print do site Salão Aurora"
+                    src="images/brunaprint.png"
+                    alt="Print do site da psicóloga Bruna Mongelôs"
                     loading="lazy"
                     decoding="async"
                     width="1200"
@@ -1566,9 +1843,9 @@
                     border-radius: 6px;
                   "
                 >
-                  Salão & Estética
+                  Psicologia
                 </div>
-              </div>
+              </a>
               <div
                 style="
                   padding: 22px;
@@ -1591,7 +1868,7 @@
                       padding: 4px 10px;
                       border-radius: 999px;
                     "
-                    >Projeto de demonstração</span
+                    >Cliente real</span
                   >
                   <h3
                     style="
@@ -1602,7 +1879,7 @@
                       color: var(--surface-dark);
                     "
                   >
-                    Salão de Beleza & Estética
+                    Bruna Mongelôs, psicóloga
                   </h3>
                   <p
                     style="
@@ -1612,24 +1889,18 @@
                       color: var(--text-muted);
                     "
                   >
-                    Página elegante para estética com vitrine de serviços,
-                    apresentação de equipe e agendamento pelo WhatsApp.
+                    Site para psicóloga em Porto Alegre e online, com SEO local e
+                    agendamento de consulta pelo WhatsApp.
                   </p>
                 </div>
                 <div style="display: flex; gap: 10px; margin-top: 20px">
-                  <button
-                    type="button"
-                    onclick="
-                      openDemoModal(
-                        'demonstracoes/salao-beleza/index.html',
-                        'Studio Elegance - Salão de Beleza',
-                      )
-                    "
+                  <a
+                    href="https://brunamongelospsicologa.com.br"
+                    target="_blank"
+                    rel="noopener"
                     class="hv-primary"
                     style="
                       flex: 1;
-                      border: none;
-                      cursor: pointer;
                       background: var(--emerald-600);
                       color: #fff;
                       font-weight: 700;
@@ -1640,19 +1911,145 @@
                       align-items: center;
                       justify-content: center;
                       gap: 6px;
+                      text-decoration: none;
                     "
                   >
-                    <span>Ver ao vivo 🔍</span>
-                  </button>
+                    <span>Ver o site no ar ↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+
+            <!-- PROJETO 2: JULIANA SOEIRO (cliente real) -->
+            <article
+              class="hv-card"
+              style="
+                background: #fff;
+                border: 1px solid var(--border-light);
+                border-radius: 20px;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+              "
+            >
+              <a
+                class="proj-thumb-wrap"
+                href="https://juliana-soeiro.netlify.app"
+                target="_blank"
+                rel="noopener"
+                aria-label="Abrir o site da Juliana Soeiro em nova aba"
+                style="
+                  position: relative;
+                  aspect-ratio: 16/10;
+                  background: linear-gradient(150deg, var(--emerald-600), var(--emerald-900));
+                  overflow: hidden;
+                  display: block;
+                  cursor: pointer;
+                "
+              >
+                <picture style="width: 100%; height: 100%; display: block">
+                  <source
+                    srcset="images/webp/julianaprint.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="images/julianaprint.png"
+                    alt="Print do site da psicóloga Juliana Soeiro"
+                    loading="lazy"
+                    decoding="async"
+                    width="1200"
+                    height="750"
+                    style="
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                      display: block;
+                    "
+                  />
+                </picture>
+                <div
+                  class="proj-thumb-overlay"
+                style="
+                    position: absolute;
+                    inset: 0;
+                    background: rgba(11, 107, 91, 0.15);
+                  "
+                ></div>
+                <div
+                  style="
+                    position: absolute;
+                    left: 14px;
+                    bottom: 14px;
+                    background: rgba(13, 27, 22, 0.85);
+                    backdrop-filter: blur(4px);
+                    color: #fff;
+                    font-size: 12px;
+                    font-weight: 600;
+                    padding: 4px 10px;
+                    border-radius: 6px;
+                  "
+                >
+                  Psicologia
+                </div>
+              </a>
+              <div
+                style="
+                  padding: 22px;
+                  display: flex;
+                  flex-direction: column;
+                  flex: 1;
+                  justify-content: space-between;
+                "
+              >
+                <div>
+                  <span
+                    style="
+                      display: inline-block;
+                      font-size: 11.5px;
+                      font-weight: 700;
+                      letter-spacing: 0.06em;
+                      text-transform: uppercase;
+                      color: var(--emerald-600);
+                      background: #e4f1ec;
+                      padding: 4px 10px;
+                      border-radius: 999px;
+                    "
+                    >Cliente real</span
+                  >
+                  <h3
+                    style="
+                      font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
+                      font-weight: 700;
+                      font-size: 20px;
+                      margin: 12px 0 8px;
+                      color: var(--surface-dark);
+                    "
+                  >
+                    Juliana Soeiro, psicóloga e autora
+                  </h3>
+                  <p
+                    style="
+                      margin: 0;
+                      font-size: 15px;
+                      line-height: 1.55;
+                      color: var(--text-muted);
+                    "
+                  >
+                    Página que reúne agendamento de terapia, newsletter e os textos
+                    da autora num só lugar.
+                  </p>
+                </div>
+                <div style="display: flex; gap: 10px; margin-top: 20px">
                   <a
-                    href="demonstracoes/salao-beleza/index.html"
+                    href="https://juliana-soeiro.netlify.app"
                     target="_blank"
                     rel="noopener"
-                    aria-label="Abrir demonstração em nova aba"
-                    class="hv-ghost"
+                    class="hv-primary"
                     style="
-                      border: 1px solid #d5ddd9;
-                      color: var(--surface-dark);
+                      flex: 1;
+                      background: var(--emerald-600);
+                      color: #fff;
                       font-weight: 700;
                       font-size: 14px;
                       padding: 11px 14px;
@@ -1660,16 +2057,18 @@
                       display: inline-flex;
                       align-items: center;
                       justify-content: center;
+                      gap: 6px;
                       text-decoration: none;
                     "
                   >
-                    ↗
+                    <span>Ver o site no ar ↗</span>
                   </a>
                 </div>
               </div>
             </article>
 
-            <!-- PROJETO 2: CLÍNICA MÉDICA -->
+
+            <!-- PROJETO 3: CLÍNICA MÉDICA (demonstração) -->
             <article
               class="hv-card"
               style="
@@ -1826,186 +2225,6 @@
                   </button>
                   <a
                     href="demonstracoes/clinica-medica/index.html"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="Abrir demonstração em nova aba"
-                    class="hv-ghost"
-                    style="
-                      border: 1px solid #d5ddd9;
-                      color: var(--surface-dark);
-                      font-weight: 700;
-                      font-size: 14px;
-                      padding: 11px 14px;
-                      border-radius: 10px;
-                      display: inline-flex;
-                      align-items: center;
-                      justify-content: center;
-                      text-decoration: none;
-                    "
-                  >
-                    ↗
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <!-- PROJETO 3: ACADEMIA TITAN -->
-            <article
-              class="hv-card"
-              style="
-                background: #fff;
-                border: 1px solid var(--border-light);
-                border-radius: 20px;
-                overflow: hidden;
-                display: flex;
-                flex-direction: column;
-              "
-            >
-              <div
-                class="proj-thumb-wrap"
-                tabindex="0"
-                style="
-                  position: relative;
-                  aspect-ratio: 16/10;
-                  background: linear-gradient(150deg, #127c68, #0a3f36);
-                  overflow: hidden;
-                  cursor: pointer;
-                "
-                onclick="
-                  openDemoModal(
-                    'demonstracoes/academia-titan/index.html',
-                    'Academia Titan - Fitness & Treino',
-                  )
-                "
-                onkeydown="
-                  if (event.key === 'Enter' || event.key === ' ') {
-                    event.preventDefault();
-                    this.click();
-                  }
-                "
-              >
-                <picture style="width: 100%; height: 100%; display: block">
-                  <source
-                    srcset="images/webp/academiatitanprint.webp"
-                    type="image/webp"
-                  />
-                  <img
-                    src="images/academiatitanprint.png"
-                    alt="Print da Academia Titan"
-                    loading="lazy"
-                    decoding="async"
-                    width="1200"
-                    height="750"
-                    style="
-                      width: 100%;
-                      height: 100%;
-                      object-fit: cover;
-                      display: block;
-                    "
-                  />
-                </picture>
-                <div
-                  class="proj-thumb-overlay"
-                  style="
-                    position: absolute;
-                    inset: 0;
-                    background: rgba(18, 124, 104, 0.15);
-                  "
-                ></div>
-                <div
-                  style="
-                    position: absolute;
-                    left: 14px;
-                    bottom: 14px;
-                    background: rgba(13, 27, 22, 0.85);
-                    backdrop-filter: blur(4px);
-                    color: #fff;
-                    font-size: 12px;
-                    font-weight: 600;
-                    padding: 4px 10px;
-                    border-radius: 6px;
-                  "
-                >
-                  Academia & Fitness
-                </div>
-              </div>
-              <div
-                style="
-                  padding: 22px;
-                  display: flex;
-                  flex-direction: column;
-                  flex: 1;
-                  justify-content: space-between;
-                "
-              >
-                <div>
-                  <span
-                    style="
-                      display: inline-block;
-                      font-size: 11.5px;
-                      font-weight: 700;
-                      letter-spacing: 0.06em;
-                      text-transform: uppercase;
-                      color: var(--emerald-600);
-                      background: #e4f1ec;
-                      padding: 4px 10px;
-                      border-radius: 999px;
-                    "
-                    >Projeto de demonstração</span
-                  >
-                  <h3
-                    style="
-                      font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
-                      font-weight: 700;
-                      font-size: 20px;
-                      margin: 12px 0 8px;
-                      color: var(--surface-dark);
-                    "
-                  >
-                    Academia & Centro de Treino
-                  </h3>
-                  <p
-                    style="
-                      margin: 0;
-                      font-size: 15px;
-                      line-height: 1.55;
-                      color: var(--text-muted);
-                    "
-                  >
-                    Landing page com planos, modalidades de treino e chamada
-                    para matrículas diretamente no atendimento.
-                  </p>
-                </div>
-                <div style="display: flex; gap: 10px; margin-top: 20px">
-                  <button
-                    type="button"
-                    onclick="
-                      openDemoModal(
-                        'demonstracoes/academia-titan/index.html',
-                        'Academia Titan - Fitness & Treino',
-                      )
-                    "
-                    class="hv-primary"
-                    style="
-                      flex: 1;
-                      border: none;
-                      cursor: pointer;
-                      background: var(--emerald-600);
-                      color: #fff;
-                      font-weight: 700;
-                      font-size: 14px;
-                      padding: 11px 14px;
-                      border-radius: 10px;
-                      display: inline-flex;
-                      align-items: center;
-                      justify-content: center;
-                      gap: 6px;
-                    "
-                  >
-                    <span>Ver ao vivo 🔍</span>
-                  </button>
-                  <a
-                    href="demonstracoes/academia-titan/index.html"
                     target="_blank"
                     rel="noopener"
                     aria-label="Abrir demonstração em nova aba"
@@ -2675,6 +2894,18 @@
       /* ── DELIGHT JS ──────────────────────────────────────────────── */
       (function() {
         var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        /* 0. Título rotativo (automações): parado em "toda semana" se reduzir movimento */
+        var rot = document.querySelectorAll('.rot > span');
+        if (rot.length && !prefersReduced) {
+          var ri = 0;
+          rot.forEach(function(s, i) { s.classList.toggle('on', i === 0); });
+          setInterval(function() {
+            rot[ri].classList.remove('on');
+            ri = (ri + 1) % rot.length;
+            rot[ri].classList.add('on');
+          }, 2000);
+        }
         var hasHover = window.matchMedia('(hover: hover)').matches;
 
         /* 1. Custom cursor */
