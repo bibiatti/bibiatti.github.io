@@ -25,7 +25,7 @@ Desenvolvimento direto, sem termos técnicos e focado em gerar demanda e vendas 
   1. A parte técnica não precisa ser complicada nem demorada.
   2. Ter um site ou agente de WhatsApp responde clientes 24/7 e não deixa vendas escaparem.
   3. A Bianca entrega a solução pronta e acompanha o resultado de perto.
-- Proof on hand: Prints de projetos de demonstração (`images/barbeariaprint.png`, `images/clinicaprint.png`, `images/advocaciaprint.png`) e foto profissional real (`images/foto-bianca.jpg`).
+- Proof on hand: Sites reais de clientes (`images/brunaprint.png`, `images/julianaprint.png`), print da demonstração de clínica (`images/clinicamedicaprint.png`) e foto profissional real (`images/foto-bianca.jpg`).
 
 ## Brand Personality
 
